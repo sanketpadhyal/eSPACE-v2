@@ -10,6 +10,7 @@ Even if nobody sees this, I still want to keep things transparent.
 
 At this point, only the **last few pages** are left.  
 If everything goes well, the deployment will be completed by **5th September**. 👻 
-I will update you all if it takes delay as i'm bringing new features.
+
+>>I will update you all if it takes delay as i'm bringing new features.
 
 > This project will be **optimized for PC only**.  
