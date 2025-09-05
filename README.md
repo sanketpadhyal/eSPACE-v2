@@ -9,7 +9,7 @@ I’m sorry for the delay, but I promise I’m giving my full effort to it. ❤�
 Even if nobody sees this, I still want to keep things transparent.  
 
 At this point, only the **last few pages** are left.  
-If everything goes well, the deployment will be completed by **5th September**. 👻 
+If everything goes well, the deployment will be completed by **7th September**. 👻 (because of some personal work) ☺️
 
 >>I will update you all if it takes delay as i'm bringing new features.
 
