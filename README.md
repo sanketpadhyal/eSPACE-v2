@@ -9,7 +9,7 @@ I’m sorry for the delay, but I promise I’m giving my full effort to it. ❤�
 Even if nobody sees this, I still want to keep things transparent.  
 
 At this point, only the **last few pages** are left.  
-If everything goes well, the deployment will be completed by **8th September**. 👻  
+Project is almost done and will be publish soon i cant tell the date but just after my current repos updation i will publish this project.
 
 > If there’s any further delay, I’ll keep you updated as I’m also bringing in new features.  
 
