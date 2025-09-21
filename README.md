@@ -4,6 +4,6 @@
 ![Status](https://img.shields.io/badge/status-Almost%20There-green)  
 ![Status](https://img.shields.io/badge/status-New%20Features!-yellow)  
 
->> NOTE : WEB WILL BE PUBLISHED IN FEW MINUTESSS
+>> NOTE : LAST about & contact PAGE IS REMAINING. 
 
 ⚡ This project will be **optimized for PC only**.  
