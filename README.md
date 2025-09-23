@@ -1,7 +1,7 @@
 # eSPACE v2 🌎
 
-**eSPACE v2** 🌎 is a **futuristic space exploration web platform** designed to bring the **wonders of the universe** closer to everyone.  
-Built by **Sanket Padhyal**, it’s a **dream project** combining **real-time space data, AI interactions, and interactive quizzes** — all in one seamless platform.
+**eSPACE v2** 🌎 is the **ultimate space explorer web** that brings the **wonders of the universe** right to your screen.  
+Built by **Sanket Padhyal**, it combines **real-time space data using NASA APIs, ISS tracking, APOD galleries, planetary exploration, immersive Moon & Mars rovers, interactive quizzes, and AI interactions** — all in one seamless platform.
 
 ---
 
@@ -56,6 +56,7 @@ This project combines **frontend interactivity**, **backend real-time APIs**, an
 - **Frontend:** HTML, CSS, JavaScript, JSON  
 - **Backend:** Node.js + JSON data  
 - **Realtime Data:** ISS tracking, quiz scores, and updates  
+- **NASA API:** Astronomy Picture of the Day (APOD), planetary data, rovers  
 - **AI Integration:** Open Router API  
 - **Hosting:** Netlify (Frontend) + Render (Backend)  
 
@@ -78,7 +79,7 @@ This project combines **frontend interactivity**, **backend real-time APIs**, an
 - Open **issues** or **pull requests** for improvements  
 - Contact via GitHub for **direct queries**  
 
---- 
+---
 
 ## 🖼️ Assets  
 
