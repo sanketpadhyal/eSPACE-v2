@@ -78,11 +78,15 @@ This project combines **frontend interactivity**, **backend real-time APIs**, an
 - Open **issues** or **pull requests** for improvements  
 - Contact via GitHub for **direct queries**  
 
----
+--- 
 
-## 🖼️ Assets
+## 🖼️ Assets  
 
-- Includes **planet images, rover galleries, space wallpapers**, and **APOD pictures**  
+- Project includes a **background wallpaper (`assets/bg.jpg`)**.  
+
+![Background Image](assets/bg.jpg)  
+
+> 💡 Always compress or optimize background images for maximum performance, and fast loading.
 
 ---
 
@@ -96,6 +100,6 @@ Crafted with ❤️ and passion by **Sanket Padhyal**
 ## 🔗 Contact & Links
 
 - **GitHub:** [https://github.com/SanketPadhyal](https://github.com/SanketPadhyal)  
-- **Live Demo:** [https://your-espace-v2-demo.netlify.app](https://your-espace-v2-demo.netlify.app)  
+- **Live Demo:** [Click Here!](https://espacev2.netlify.app/)  
 
 ---
