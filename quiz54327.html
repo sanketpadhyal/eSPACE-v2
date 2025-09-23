@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>eSPACE | Quiz</title>
+  <link rel="icon" type="image/png" href="favicon/hourglass (2).png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      color: white;
+      min-height: 80vh;
+      background: url("assets/bg.jpg") no-repeat center center fixed;
+      background-size: cover;
+      background-position: center 5%;
+      background-color: #000;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .panel {
+      padding: 40px 30px;
+      margin: 150px auto;
+      width: 90%;
+      max-width: 900px;
+      background: rgba(0,0,0,0.55);
+      border-radius: 14px;
+      text-align: center;
+      backdrop-filter: blur(12px) saturate(130%);
+      -webkit-backdrop-filter: blur(12px) saturate(130%);
+      border: 1px solid rgba(255,255,255,0.15);
+      transform: translateY(30px);
+      opacity: 0;
+      animation: fadeSlideUp 1s ease-out forwards;
+      animation-delay: 1s;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 1s ease-out forwards;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(to right, transparent, #ffffff, transparent);
+      margin: 20px 0;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    #score-panel {
+      display: flex;
+      justify-content: space-around;
+      margin: 15px 0 25px;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 0.8rem;
+    }
+
+    #score-panel div {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 10px;
+      padding: 8px 14px;
+      min-width: 90px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    #score-panel div:hover {
+      transform: scale(1.08);
+      background: rgba(255,255,255,0.2);
+    }
+
+    .quiz-card {
+      font-family: 'Press Start 2P', cursive;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 16px;
+      padding: 30px 25px;
+      text-align: left;
+      box-shadow: 
+        -6px 0 15px rgba(255, 255, 255, 0.2),
+         6px 0 15px rgba(255, 255, 255, 0.2),
+         0 8px 20px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    .quiz-card h3 {
+      color: #07bbf2e9;
+      margin-bottom: 18px;
+      font-size: 1.35rem;
+    }
+
+    .quiz-card ul { list-style: none; padding-left: 0; }
+
+    .quiz-card li {
+      background: rgba(255, 255, 255, 0.05); 
+      margin: 10px 0;
+      padding: 12px 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      font-size: 0.9rem;
+    }
+
+    .quiz-card li:hover { background: rgba(38, 0, 255, 0.4); transform: translateX(4px); }
+    .quiz-card li.correct { background: rgba(0, 255, 0, 0.45); }
+    .quiz-card li.wrong { background: rgba(255, 0, 0, 0.55); }
+
+    .quiz-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #4526c0, #c78407);
+      color: #ffffff;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      font-family: 'Segoe UI', sans-serif;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(6px);
+      transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .quiz-btn:hover {
+      transform: scale(1.07);
+      background: linear-gradient(135deg, #5b34e0, #d98c08);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35), 0 0 12px rgba(255, 255, 255, 0.25);
+    }
+
+    .alert-box {
+      display: none;
+      margin: 15px 0;
+      padding: 12px 15px;
+      border-left: 6px solid rgb(255, 0, 0);
+      background: rgba(255, 0, 0, 0.1);
+      color: #f4f4f4;
+      font-weight: bold;
+      border-radius: 6px;
+      text-align: left;
+      font-family: 'Press Start 2P', cursive;
+      transition: all 0.4s ease;
+    }
+
+    #quiz-section h2 {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 25px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      font-size: 1.3rem;
+      color: #f9f9f9;
+      font-weight: 600;
+      text-align: center;
+      font-family: 'Press Start 2P', cursive;
+      backdrop-filter: blur(6px);
+      box-shadow: 
+        -4px 0 12px rgba(255, 255, 255, 0.25), 
+         4px 0 12px rgba(255, 255, 255, 0.25),
+         0 4px 12px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #quiz-section h2 img {
+      vertical-align: middle;
+      width: 1.5em;
+      filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
+    }
+
+    @keyframes fadeSlideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header class="fade-up delay-1">
+    <div class="logo"><span>e</span><span>SPACE</span></div>
+    <nav class="nav-glass-panel">
+      <ul class="desktop">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="releases.html">Releases</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </header>
+
+  <section id="quiz-section">
+    <div class="panel fade-up delay-2">
+      <h2><strong><img src="assets/hourglass (1).png" alt=""> Quiz Challenge</strong></h2>
+      <hr>
+
+      <div id="score-panel">
+        <div>Attempts: <span id="attempts">0</span></div>
+        <div>Correct: <span id="correct">0</span></div>
+        <div>Wrong: <span id="wrong">0</span></div>
+        <div>Skipped: <span id="skipped">0</span></div>
+      </div>
+
+      <div class="alert-box" id="alert-box">
+        <img src="assets/wrong.png" style="width:1.5em; vertical-align:middle;"> Wrong answer!
+      </div>
+
+      <hr>
+      <div class="quiz-card" id="quiz-card"></div>
+      <a href="#" class="quiz-btn" id="next-btn">
+        <strong>Next Question</strong>
+        <img src="assets/arrow_right.png" style="width:1.5em">
+      </a>
+    </div>
+  </section>
+
+  <script>
+    const quizCard = document.getElementById("quiz-card");
+    const nextBtn = document.getElementById("next-btn");
+    const alertBox = document.getElementById("alert-box");
+
+    const attemptsEl = document.getElementById("attempts");
+    const correctEl = document.getElementById("correct");
+    const skippedEl = document.getElementById("skipped");
+    const wrongEl = document.getElementById("wrong");
+
+    let attempts = 0, correct = 0, skipped = 0, wrong = 0;
+    let quizQuestions = [];
+    let currentIndex = 0;
+    let answered = false;
+
+    async function fetchQuiz() {
+      try {
+        const res = await fetch("ADD YOUR BACKEND LINKapi/nasa/quiz");
+        const data = await res.json();
+        quizQuestions = data;
+        currentIndex = 0;
+        loadQuestion(currentIndex);
+      } catch (err) {
+        console.error("Failed to fetch quiz:", err);
+        quizCard.innerHTML = `<p>⚠ Failed to load quiz.</p>`;
+        nextBtn.style.display = "none";
+      }
+    }
+
+    function loadQuestion(index) {
+      if (!quizQuestions[index]) return;
+      const q = quizQuestions[index];
+      answered = false;
+
+      alertBox.style.display = "none";
+      quizCard.innerHTML = `
+        <h3>${q.question}</h3>
+        <ul>${q.options.map((opt,i)=>`<li data-index="${i}">${opt}</li>`).join('')}</ul>
+      `;
+
+      const options = quizCard.querySelectorAll('li');
+      options.forEach(li=>{
+        li.addEventListener('click', ()=>{
+          if(answered) return;
+          attempts++; attemptsEl.textContent = attempts;
+
+          if(parseInt(li.dataset.index) === q.answer){
+            correct++; correctEl.textContent = correct;
+            li.classList.add('correct');
+            alertBox.style.display = "none";
+          } else {
+            wrong++; wrongEl.textContent = wrong;
+            li.classList.add('wrong');
+            alertBox.style.display = "block";
+            setTimeout(()=> alertBox.style.display="none",3000);
+            options[q.answer].classList.add('correct');
+          }
+          answered = true;
+        });
+      });
+    }
+
+    nextBtn.addEventListener('click', e=>{
+      e.preventDefault();
+      if(!answered){ skipped++; skippedEl.textContent = skipped; }
+      currentIndex++;
+      if(currentIndex >= quizQuestions.length){
+        fetchQuiz();
+      } else {
+        loadQuestion(currentIndex);
+      }
+    });
+
+    fetchQuiz();
+  </script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

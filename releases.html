@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>eSPACE | Releases</title>
+  <link rel="icon" type="image/png" href="assets/dart.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      color: white;
+      min-height: 100vh;
+      background: url("assets/bg.jpg") no-repeat center center fixed;
+      background-size: 120% auto;
+      background-position: center 5%;
+      background-color: #000;
+      transition: background-size 0.2s ease-out;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .panel {
+      padding: 40px 30px;
+      margin: 150px auto;
+      width: 90%;
+      max-width: 900px;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 14px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    #mission {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 1s ease-out forwards;
+    }
+    .fade-up.delay-1 { animation-delay: 0.2s; }
+    .fade-up.delay-2 { animation-delay: 0.5s; }
+    .fade-up.delay-3 { animation-delay: 0.8s; }
+
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .slider { width: 100%; overflow: hidden; height: auto; margin-top: 20px; }
+    .slides { display: flex; transition: transform 1s ease-in-out; width: 100%; }
+    .slide { min-width: 100%; padding: 20px; box-sizing: border-box; text-align: center; }
+    .slide h3 { margin-bottom: 10px; color: #00d4ff; font-size: 1.4rem; }
+    .slide p { font-size: 1rem; line-height: 1.5; margin: 15px 0; text-align: center; }
+
+    .read-btn {
+      display: inline-block;
+      padding: 10px 18px;
+      margin-top: 8px;
+      border-radius: 20px;
+      background: linear-gradient(45deg, #00d4ff, #0077ff);
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: bold;
+      transition: transform 0.2s ease, background 0.3s;
+    }
+    .read-btn:hover { transform: scale(1.05); background: linear-gradient(45deg, #0077ff, #00d4ff); }
+
+    .date { display: block; margin-top: 8px; font-size: 0.85rem; font-style: italic; text-align: right; opacity: 0.8; }
+
+    .dots { margin-top: 20px; }
+    .dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: gray;
+      border-radius: 50%;
+      margin: 0 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .dot.active { background: white; }
+
+    .notice-box {
+      margin: 15px auto;
+      padding: 12px 18px;
+      max-width: 700px;
+      background: rgba(0, 195, 255, 0.1);
+      border: 1px solid rgba(0, 195, 255, 0.4);
+      border-radius: 10px;
+      color: #b3ecff;
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-align: center;
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      animation: pulseGlow 2s infinite alternate;
+    }
+
+    @keyframes pulseGlow {
+      from { box-shadow: 0 0 4px rgba(0,195,255,0.3); }
+      to { box-shadow: 0 0 12px rgba(0,195,255,0.6); }
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(to right, transparent, #ffffff, transparent);
+      margin: 20px 0;
+    }
+
+    @media (max-width: 1024px) {
+      body { background: url("assets/bg-mobile.jpg") no-repeat center center fixed; background-size: cover; }
+      .slide h3 { font-size: 1.2rem; }
+      .slide p { font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="fade-up delay-1">
+    <div class="logo"><span>e</span><span>SPACE</span></div>
+    <nav class="nav-glass-panel">
+      <ul class="desktop">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="quiz54327.html">Quiz</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </header>
+
+  <section id="mission">
+    <div class="panel fade-up delay-2">
+      <h2>
+        <strong>
+          <img src="assets/dart.png" style="width:2.5em; vertical-align:middle; margin-top:-3%;">
+          NEW RELEASES
+        </strong>
+      </h2>
+      <br>
+
+      <div class="notice-box">
+        <img src="assets/woman-tipping-hand.png" alt="Info" style="width:1.6em; vertical-align:middle; margin-right:6px;">
+        <span>Listen — these missions update only <strong>after 1–2 hours</strong> once fetched from NASA servers.</span>
+      </div>
+
+      <hr>
+
+      <div class="slider">
+        <div class="slides" id="missionSlides"></div>
+      </div>
+      <div class="dots" id="dots"></div>
+    </div>
+  </section>
+
+  <script>
+    let currentIndex = 0;
+    let totalSlides = 0;
+    let autoSlideInterval;
+
+    function goToSlide(index) {
+      currentIndex = index;
+      document.getElementById("missionSlides").style.transform = `translateX(-${index * 100}%)`;
+      document.querySelectorAll(".dot").forEach((d,i) => {
+        d.classList.toggle("active", i === index);
+      });
+    }
+
+    function startAutoSlide() {
+      if(autoSlideInterval) clearInterval(autoSlideInterval);
+      autoSlideInterval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        goToSlide(currentIndex);
+      }, 6000);
+    }
+
+    async function loadMissions() {
+      try {
+        const res = await fetch("ADD YOUR BACKEND LINKapi/missions");
+        const data = await res.json();
+
+        if (!Array.isArray(data)) throw new Error("Invalid missions response");
+
+        const slidesContainer = document.getElementById("missionSlides");
+        const dotsContainer = document.getElementById("dots");
+        slidesContainer.innerHTML = "";
+        dotsContainer.innerHTML = "";
+
+        totalSlides = data.length;
+
+        data.forEach((mission, index) => {
+          const slide = document.createElement("div");
+          slide.classList.add("slide");
+          slide.innerHTML = `
+            <h3>${mission.name}</h3>
+            <p>${mission.desc}</p>
+            <a href="${mission.link}" target="_blank" class="read-btn">
+              <img src="assets/link.png" alt="Read More" style="width:1.5em; vertical-align:middle; margin-right:6px;">
+              Read More
+            </a>
+            <span class="date"><em>${new Date(mission.pubDate).toLocaleDateString()}</em></span>
+          `;
+          slidesContainer.appendChild(slide);
+
+          const dot = document.createElement("span");
+          dot.classList.add("dot");
+          if(index === 0) dot.classList.add("active");
+          dot.addEventListener("click", () => { goToSlide(index); startAutoSlide(); });
+          dotsContainer.appendChild(dot);
+        });
+
+        goToSlide(0);
+        startAutoSlide();
+
+      } catch(err) {
+        console.error("Error loading mission:", err);
+        document.getElementById("missionSlides").innerHTML = `
+          <div class="slide">
+            <h3><img src="assets/desert.png" alt="Error" style="width:2.3em; vertical-align:middle; margin-right:6px;"> Failed to load missions</h3>
+            <p><img src="assets/warning (2).png" alt="Error" style="width:1.3em; vertical-align:middle; margin-right:6px; margin-top:-1%;"> Please try again later.</p>
+          </div>
+        `;
+      }
+    }
+
+    window.addEventListener('scroll', () => {
+      if(window.innerWidth > 1024){
+        const scrollTop = window.scrollY;
+        document.body.style.backgroundSize = `${120 - scrollTop * 0.08}% auto`;
+      }
+    });
+
+    loadMissions();
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>

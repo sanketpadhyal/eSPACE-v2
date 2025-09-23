@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>eSPACE | ISS Tracker</title>
+<link rel="icon" type="image/png" href="assets/isss.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    min-height: 100vh;
+    margin-top: 3%;
+    background: url("assets/bg.jpg") no-repeat center center fixed;
+    background-size: 120% auto;
+    background-position: center 5%;
+    background-color: #000;
+    transition: background-size 0.2s ease-out;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00d4ff;
+    letter-spacing: 2px;
+    margin: 30px 0 10px 0;
+    text-shadow: 0 0 10px rgba(0,212,255,0.6);
+    margin-top: 6%;
+  }
+
+  .fullscreen-map #iss-section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 0;
+    margin-top: 0;
+    height: 100vh;
+    gap: 0;
+  }
+
+  .fullscreen-map .map-wrapper { flex: 1; height: 100%; min-height: 0; }
+  .fullscreen-map #map { height: 100%; border-radius: 0; border: none; }
+
+  #iss-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .info-panel {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 14px;
+    padding: 20px;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .highlighted { box-shadow: 0 0 30px 6px #ffffffa5 !important; position: relative; z-index: 1000; }
+
+  #focusOverlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    backdrop-filter: blur(6px) brightness(0.5);
+    background: rgba(0,0,0,0.4);
+    z-index: 999;
+    display: none;
+  }
+
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .panel-header h2 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #fefefe;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .dark-mode-switch {
+    width: 50px;
+    height: 28px;
+    position: relative;
+    margin-top: -13%;
+  }
+
+  .dark-mode-switch input { opacity: 0; width: 0; height: 0; }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 28px;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px; width: 22px;
+    left: 3px; bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+
+  .dark-mode-switch input:checked + .slider { background-color: #363131e2; }
+  .dark-mode-switch input:checked + .slider:before { transform: translateX(22px); }
+
+  .info-panel p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+  }
+
+  .live-data {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .coords {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.03);
+  }
+
+  .coords p { margin: 0; font-size: 0.85rem; }
+
+  .btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #745999, #2b1478, #0b0125);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+  }
+
+  .btn:hover { transform: scale(1.08); box-shadow: 0 8px 16px rgba(0,0,0,0.25); }
+
+  .map-wrapper {
+    flex: 2 1 500px;
+    min-width: 400px;
+    position: relative;
+    height: 500px;
+  }
+
+  #map {
+    height: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: filter 0.3s ease;
+  }
+
+  #map.blur { filter: blur(6px) brightness(0.6); pointer-events: none; }
+
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 6px;
+  }
+
+  .loader span {
+    width: 12px; height: 12px;
+    background: #00d4ff;
+    border-radius: 50%;
+    animation: bounce 1s infinite ease-in-out;
+  }
+
+  .loader span:nth-child(2) { animation-delay: 0.2s; }
+  .loader span:nth-child(3) { animation-delay: 0.4s; }
+
+  @keyframes bounce { 0%,80%,100% { transform: scale(0.6); opacity: 0.5; } 40% { transform: scale(1); opacity: 1; } }
+
+  .crew-list { margin-top: 15px; font-size: 0.85rem; color: #b3ecff; }
+  .crew-list li { margin: 5px 0; }
+
+  hr { border: none; height: 2px; background: linear-gradient(to right, transparent, #ffffff, transparent); margin: 20px 0; }
+
+  footer {
+    text-align: center;
+    padding: 15px 20px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+
+  .glass-title {
+    max-width: 600px;
+    margin: 30px auto 20px auto;
+    padding: 15px 25px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 14px;
+    backdrop-filter: blur(8px);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00d4ff;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(0,212,255,0.6);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 6%;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><span>e</span><span>SPACE</span></div>
+  <nav class="nav-glass-panel">
+    <ul class="desktop">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="quiz54327.html">Quiz</a></li>
+      <li><a href="releases.html">Releases</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="glass-title">
+  <span style="background-color: rgba(69, 67, 137, 0.311); padding: 2px 4px; border-radius: 4px;">ISS TRACKER</span>
+  <img src="assets/iss.jpg" style="width:1.5em; vertical-align:middle; margin-left:8px;">
+  <p style="margin-top:8px; font-size:0.85rem; font-weight:500; color:#ffffff;">
+    This page fetches <strong>real-time updates from NASA API</strong> to show the current position, speed, and crew of the ISS.
+  </p>
+</div>
+
+<section id="iss-section">
+  <div class="info-panel">
+    <div class="panel-header">
+      <h2>
+        <img src="assets/satellite_antenna.png" style="width:1.3em; vertical-align:middle; margin-right:6px;">
+        <span style="background-color: rgba(19, 231, 234, 0.44); padding: 2px 4px; border-radius: 4px;">ISS Live Tracker</span>
+      </h2>
+      <label class="dark-mode-switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <p><strong> ➲<i> The ISS orbits Earth at about 28,000 km/h. This tracker shows its <strong>real-time location</strong>, speed, and crew.</i></strong></p>
+
+    <div class="live-data">
+      <p><strong><img src="assets/earth_asia.png" style="width:1.5em; vertical-align:middle; margin-top: -01%;"> Location:</strong> <span id="location">Loading...</span></p>
+      <div class="coords">
+        <p><strong><img src="assets/round_pushpin.png" style="width:1.5em; vertical-align:middle; margin-top: -01%;"> Latitude:</strong> <span id="lat">--</span>°</p>
+        <p><strong><img src="assets/round_pushpin.png" style="width:1.5em; vertical-align:middle; margin-top: -01%;"> Longitude:</strong> <span id="lon">--</span>°</p>
+      </div>
+      <hr>
+      <p><strong><img src="assets/rocket (1).png" style="width:1.5em; vertical-align:middle;"> Speed:</strong> <span id="speed">--</span> km/h</p>
+      <p><strong><img src="assets/waning_gibbous_moon.png" style="width:1.4em; vertical-align:middle; margin-top: -01%;"> / <img src="assets/waning_crescent_moon (1).png" style="width:1.4em; vertical-align:middle; margin-top: -01%;"> Time:</strong> <span id="dayNight">--</span></p>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn" onclick="updateISS()"><img src="assets/repeat.png" style="width:1.3em; vertical-align:middle;"> Refresh</button>
+    </div>
+    <ul class="crew-list" id="crewList"></ul>
+  </div>
+
+  <div class="map-wrapper">
+    <div id="map" class="blur"></div>
+    <div class="loader" id="mapLoader"><span></span><span></span><span></span></div>
+  </div>
+</section>
+
+<div id="focusOverlay"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+  const map = L.map('map').setView([0, 0], 2);
+  const lightTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap contributors' }).addTo(map);
+  const darkTiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { attribution: '&copy; OpenStreetMap &copy; CARTO', subdomains: 'abcd', maxZoom: 19 });
+  let marker = L.marker([0, 0], { icon: L.icon({ iconUrl: 'assets/satellite.png', iconSize: [40,40], iconAnchor: [25,25] }) }).addTo(map);
+
+  let darkMode = false;
+  const darkToggle = document.getElementById('darkModeToggle');
+  const infoPanel = document.querySelector('.info-panel');
+  const focusOverlay = document.getElementById('focusOverlay');
+
+  function setMapMode(isDark) {
+    darkMode = isDark;
+    darkToggle.checked = isDark;
+    if(darkMode) { map.removeLayer(lightTiles); map.addLayer(darkTiles); } 
+    else { map.removeLayer(darkTiles); map.addLayer(lightTiles); }
+  }
+  darkToggle.addEventListener('change', () => { setMapMode(darkToggle.checked); });
+
+  async function updateISS() {
+    try {
+      const res = await fetch("ADD YOUR BACKEND LINKapi/nasa/iss");
+      if (!res.ok) throw new Error("Server offline");
+      const data = await res.json();
+      const lat = Number(data.latitude), lon = Number(data.longitude), velocity = Number(data.velocity_kmh), dayNight = data.day_night ?? "--";
+      if(!isNaN(lat) && !isNaN(lon)){
+        marker.setLatLng([lat, lon]);
+        map.setView([lat, lon], 3);
+        document.getElementById("lat").textContent = lat.toFixed(2);
+        document.getElementById("lon").textContent = lon.toFixed(2);
+        document.getElementById("speed").textContent = velocity.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});
+        document.getElementById("location").textContent = "Over Earth";
+        document.getElementById("dayNight").textContent = dayNight;
+        if(dayNight.toLowerCase() === "day") setMapMode(false);
+        else if(dayNight.toLowerCase() === "night") setMapMode(true);
+        document.getElementById("map").classList.remove("blur");
+        document.getElementById("mapLoader").style.display = "none";
+      } else throw new Error("Invalid ISS coordinates");
+    } catch(err) {
+      console.error("❌ Failed to fetch ISS position:", err);
+      document.getElementById("map").classList.add("blur");
+      document.getElementById("mapLoader").style.display = "flex";
+    }
+  }
+
+  marker.on('click', () => {
+    focusOverlay.style.display = 'block';
+    infoPanel.classList.add('highlighted');
+    const zoomControls = document.querySelectorAll('.leaflet-control-zoom');
+    zoomControls.forEach(ctrl => { ctrl.style.filter = 'blur(4px)'; ctrl.style.pointerEvents = 'none'; });
+    const attribution = document.querySelector('.leaflet-control-attribution');
+    if(attribution){ attribution.style.filter = 'blur(4px)'; attribution.style.pointerEvents = 'none'; }
+    infoPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setTimeout(() => {
+      focusOverlay.style.display = 'none';
+      infoPanel.classList.remove('highlighted');
+      zoomControls.forEach(ctrl => { ctrl.style.filter = 'none'; ctrl.style.pointerEvents = 'auto'; });
+      if(attribution){ attribution.style.filter = 'none'; attribution.style.pointerEvents = 'auto'; }
+    }, 2000);
+  });
+
+  updateISS();
+  setInterval(updateISS,5000);
+
+  function checkFullscreen() {
+    if (document.fullscreenElement) { document.body.classList.add('fullscreen-map'); } 
+    else { document.body.classList.remove('fullscreen-map'); }
+  }
+  document.addEventListener('fullscreenchange', checkFullscreen);
+  checkFullscreen();
+</script>
+</body>
+</html>

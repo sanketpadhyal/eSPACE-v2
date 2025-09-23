@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>eSPACE | Mars Rover Curiosity Gallery</title>
+  <link rel="icon" type="image/png" href="assets/mars.png">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      color: white;
+      min-height: 100vh;
+      background: url("assets/bg.jpg") no-repeat center center fixed;
+      background-size: 120% auto;
+      background-position: center 5%;
+      background-color: #000;
+      transition: background-size 0.2s ease-out;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page-title {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+      border-radius: 15px;
+      margin: 6% 0 2% 0;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.2);
+      background: linear-gradient(120deg, #ff5500, #9e6f3a, #90826f);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      text-align: center;
+      transition: transform 0.3s ease, text-shadow 0.3s ease;
+      cursor: default;
+    }
+
+    .page-title:hover {
+      transform: translateY(-3px);
+      text-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 15px;
+      padding: 0 30px 50px 30px;
+      max-width: 1400px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      cursor: pointer;
+      background: rgba(255,255,255,0.05);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+      filter: brightness(0.85);
+    }
+
+    .gallery-item .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px 15px;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      font-size: 0.9rem;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .gallery-item:hover .overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .skeleton-box {
+      height: 180px;
+      border-radius: 15px;
+      background: rgba(255,255,255,0.05);
+      position: relative;
+      overflow: hidden;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    .skeleton-box::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -150px;
+      width: 150px;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+      animation: loading 1.2s infinite;
+    }
+
+    @keyframes loading { 0% { left: -150px; } 100% { left: 100%; } }
+    @keyframes pulse { 0%,100%{background-color: rgba(255,255,255,0.05);} 50%{background-color: rgba(255,255,255,0.1);} }
+
+    .gallery-description {
+      max-width: 1000px;
+      margin: 40px auto 80px;
+      padding: 30px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #fff;
+      text-align: center;
+    }
+
+    .gallery-description strong { color: #ff8800; }
+
+    hr { width: 90%; border: 0.5px solid rgba(255,255,255,0.2); margin: 20px 0; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo"><span>e</span><span>SPACE</span></div>
+  <nav class="nav-glass-panel">
+    <ul class="desktop">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="releases.html">Releases</a></li>
+    </ul>
+  </nav>
+</header>
+
+<h1 class="page-title">MARS ROVER CURIOSITY GALLERY 
+  <img src="assets/mars.png" style="width:2.3em; vertical-align:middle; margin-top: -2%;">
+</h1>
+
+<div class="gallery-description" style="margin-top: 1%;">
+  <p>Welcome to the <strong>Mars Rover Curiosity Gallery</strong>, featuring a curated collection of stunning images captured by NASA’s <strong>Curiosity Rover</strong> on the Martian surface. Explore the red planet’s landscapes, rocks, and scientific discoveries through the rover’s eyes.</p>
+</div><hr style="margin-top: -2%;"/>
+
+<div class="gallery-container" id="marsGallery" >
+</div>
+
+<script>
+const marsGallery = document.getElementById("marsGallery");
+const backendURL = "ADD YOUR BACKEND LINKapi/nasa/mars-curiosity"; 
+
+function showSkeletons(count = 15) {
+  marsGallery.innerHTML = "";
+  for (let i = 0; i < count; i++) {
+    const skeleton = document.createElement("div");
+    skeleton.classList.add("skeleton-box");
+    marsGallery.appendChild(skeleton);
+  }
+}
+
+async function loadMarsGallery() {
+  const skeletonStart = Date.now();
+  const minSkeletonTime = 1000;
+  showSkeletons();
+
+  try {
+    const res = await fetch(backendURL);
+    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+    const data = await res.json();
+
+    const elapsed = Date.now() - skeletonStart;
+    const waitTime = Math.max(0, minSkeletonTime - elapsed);
+
+    setTimeout(() => {
+      marsGallery.innerHTML = "";
+      data.forEach(item => {
+        const div = document.createElement("div");
+        div.classList.add("gallery-item");
+        div.innerHTML = `
+          <img src="${item.img_src}" alt="${item.title}">
+          <div class="overlay">${item.title}</div>
+        `;
+        div.addEventListener("click", () => window.open(item.img_src, "_blank"));
+        marsGallery.appendChild(div);
+      });
+    }, waitTime);
+
+  } catch (err) {
+    console.error("Failed to fetch Mars Curiosity Rover gallery:", err);
+    setTimeout(() => {
+      marsGallery.innerHTML = `<p style="color:#fff; text-align:center;">Could not load gallery.</p>`;
+    }, minSkeletonTime);
+  }
+}
+
+window.addEventListener("DOMContentLoaded", loadMarsGallery);
+</script>
+</body>
+</html>

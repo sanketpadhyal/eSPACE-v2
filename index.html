@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>eSPACE | Main Dashboard</title>
+<link rel="icon" type="image/png" href="assets/satellite.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  min-height: 100vh;
+  background: url("assets/bg.jpg") no-repeat center center fixed;
+  background-size: 120% auto;
+  background-position: center 5%;
+  background-color: #000000;
+  transition: background-size 0.2s ease-out;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease-out forwards;
+}
+.fade-up.delay-1 { animation-delay: 0.2s; }
+.fade-up.delay-2 { animation-delay: 0.5s; }
+.fade-up.delay-3 { animation-delay: 0.8s; }
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1024px) {
+  body {
+    background: url("assets/bg-mobile.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  .hero-content h1 { font-size: 2rem; }
+  .hero-content p { font-size: 1rem; }
+  .memories-box img { width: 100%; }
+  .glass-box h2 { font-size: 1.5rem; }
+  .glass-box p { font-size: 0.95rem; }
+  .nav-glass-panel ul.desktop { display: none; }
+  .nav-glass-panel ul.mobile { display: flex; flex-direction: column; gap: 10px; }
+  .menu-toggle { display: flex; }
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 { font-size: 1.5rem; }
+  .hero-content p { font-size: 0.9rem; }
+  .glass-box h2 { font-size: 1.2rem; }
+  .glass-box p { font-size: 0.85rem; }
+}
+
+.loader-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.loader-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.loader-dots {
+  display: flex;
+  gap: 10px;
+}
+.loader-dots div {
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border-radius: 50%;
+  animation: bounce 1s infinite;
+}
+.loader-dots div:nth-child(2) { animation-delay: 0.2s; }
+.loader-dots div:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+  0%, 80%, 100% { transform: scale(0.7); opacity: 0.5; }
+  40% { transform: scale(1.2); opacity: 1; }
+}
+
+</style>
+</head>
+<body>
+<header class="fade-up delay-1">
+  <div class="logo"><span>e</span><span>SPACE</span></div>
+  <nav>
+    <nav class="nav-glass-panel">
+      <ul class="desktop">
+        <li><a href="about.html">About</a></li>
+        <li><a href="releases.html">Releases</a></li>
+        <li><a href="quiz54327.html">Quiz</a></li>
+      </ul>
+    </nav>
+</header>
+
+<section class="hero">
+  <div class="nasa-live-news">
+  <div class="nasa-text" id="nasa-news-text">
+    Loading real NASA news...
+  </div>
+</div>
+
+  <div class="hero-content fade-up delay-1">
+    <h1>Discover Beyond Space <img src="assets/satellite.png" style="width:1.5em; vertical-align:middle;"></h1>
+    <p>"Embark on a journey of exploration and discovery in the vast Expanse."</p>
+    <!-- fixed anchor -->
+    <a href="#space-sections" class="btn">Explore</a>
+  </div>
+
+<div class="memories-box fade-up delay-2">
+  <h2 id="memory-title">NASA Image of the Day</h2>
+
+  <a id="memory-link" href="assets/mem1.jpg" target="_blank">
+    <img id="memory-img" src="assets/mem1.jpg" alt="NASA Image of the Day">
+  </a>
+</div>
+
+
+</section>
+
+<hr class="fade-up delay-3">
+
+<section id="space-sections" class="extra fade-up delay-2">
+  <div style="display: flex; gap: 80px; justify-content: center; flex-wrap: wrap;">
+
+    <div class="glass-box fade-up delay-3" style="flex: 1; min-width: 300px; max-width: 500px;">
+      <h2>
+        <img src="assets/telescope.png" style="width:1.5em; vertical-align:middle;"> Discover Space Planets
+      </h2>
+      <p>
+        <strong><i style="background-color: rgb(244,244,244); color: black; padding:2px 4px; border-radius:3px;">
+        Learn about the mysteries of planets beyond our solar system. From gas giants to rocky exoplanets, explore worlds never seen before.
+        </i></strong>
+      </p>
+      <img src="assets/solarsystem.jpg" 
+           alt="Planets" 
+           class="illustration" 
+           style="width:100%; height:255px; object-fit:cover; border-radius:10px; margin:10px 0;">
+
+      <a href="planets.html" class="btn page-link">Visit Planets</a>
+    </div>
+
+    <div class="glass-box fade-up delay-3" style="flex: 1; min-width: 300px; max-width: 500px;">
+      <h2>
+        <img src="assets/isss.png" style="width:2.5em; vertical-align:middle;"> Track the ISS
+      </h2>
+      <p>
+        <strong><i style="background-color: rgb(244,244,244); color: black; padding:2px 4px; border-radius:3px;">
+        Track the International Space Station in real time. Watch humanity’s outpost orbit Earth and discover its journey across the skies above you.
+        </i></strong>
+      </p>
+      <img src="assets/iss.jpg" alt="ISS" class="illustration" style="width:100%; border-radius:10px; margin:10px 0;">
+      <a href="iss-tracker435.html" class="btn page-link">Visit ISS Tracker</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<hr class="fade-up delay-3">
+
+<section id="space-gallery" class="extra fade-up delay-2">
+  <div style="display: flex; gap: 80px; justify-content: center; flex-wrap: wrap;">
+
+    <div class="glass-box fade-up delay-3" style="flex: 1; min-width: 300px; max-width: 500px;">
+      <h2>
+        <img src="assets/tent.png" style="width:2.0em; vertical-align:middle; margin-top:-4%;"> APOD Gallery
+      </h2>
+      <p>
+        <strong><i style="background-color: rgb(244,244,244); color: black; padding:2px 4px; border-radius:3px;">
+        Explore stunning images of our universe, from galaxies and nebulae to planets and space missions. Immerse yourself in the beauty of space.
+        </i></strong>
+      </p>
+
+      <div class="gallery-images" style="
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 15px; 
+        margin: 15px 0;
+      ">
+        <img src="assets/img1.png" alt="Space 1" class="gallery-item">
+        <img src="assets/img2.png" alt="Space 2" class="gallery-item">
+        <img src="assets/img3.png" alt="Space 3" class="gallery-item">
+        <img src="assets/img4.png" alt="Space 4" class="gallery-item">
+        <img src="assets/img6.png" alt="Space 6" class="gallery-item">
+      </div>
+
+      <a href="nasa-image-3487.html" class="btn page-link">Visit APOD</a>
+    </div>
+
+    <div class="glass-box fade-up delay-3" style="flex: 1; min-width: 300px; max-width: 500px;">
+      <h2>
+        <img src="assets/moon.png" style="width:2.0em; vertical-align:middle; margin-top:-2%;"> Moon Rover Gallery
+      </h2>
+      <p>
+        <strong><i style="background-color: rgb(244,244,244); color: black; padding:2px 4px; border-radius:3px;">
+        Explore the incredible journeys of Moon rovers, from Apollo missions to modern-day lunar exploration.
+        </i></strong>
+      </p>
+
+      <div class="gallery-images" style="
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 15px; 
+        margin: 15px 0;
+      ">
+        <img src="assets/moon1.png" alt="Moon Rover 1" class="gallery-item">
+        <img src="assets/moon2.jpg" alt="Moon Rover 2" class="gallery-item">
+        <img src="assets/moon3.jpg" alt="Moon Rover 3" class="gallery-item">
+        <img src="assets/moon4.jpg" alt="Moon Rover 4" class="gallery-item">
+        <img src="assets/moon5.jpg" alt="Moon Rover 4" class="gallery-item">
+      </div>
+
+      <a href="moon-rovers.html" class="btn page-link">See Rovers</a>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="space-gallery" class="extra fade-up delay-2">
+  <div style="display: flex; gap: 80px; justify-content: center; flex-wrap: wrap; margin-top: -02%;">
+
+<div class="glass-box fade-up delay-3" style="flex: 1; min-width: 300px; max-width: 500px;">
+  <h2>
+    <img src="assets/mars.png" style="width:2em; vertical-align:middle; margin-top:-2%;"> Mars Rover Gallery
+  </h2>
+  <p>
+    <strong><i style="background-color: rgb(244,244,244); color: black; padding:2px 4px; border-radius:3px;">
+    Explore the incredible missions of Mars rovers, from Spirit and Opportunity to Curiosity and Perseverance, capturing the Red Planet’s surface in stunning detail.
+    </i></strong>
+  </p>
+
+  <div class="gallery-images" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 15px 0;">
+    <img src="assets/mars1.jpg" alt="Mars Rover 1" class="gallery-item">
+    <img src="assets/mars2.jpg" alt="Mars Rover 2" class="gallery-item">
+    <img src="assets/mars3.jpg" alt="Mars Rover 3" class="gallery-item">
+    <img src="assets/mars4.jpg" alt="Mars Rover 4" class="gallery-item">
+    <img src="assets/mars5.jpg" alt="Mars Rover 5" class="gallery-item">
+  </div>
+
+  <a href="mars-rovers.html" class="btn page-link">See Rovers</a>
+</div>
+
+<div class="glass-box fade-up delay-3" style="flex: 1; min-width: 300px; max-width: 500px;">
+  <h2>
+    <img src="planets/nebula.jpg" style="width:2em; vertical-align:middle; margin-top:-4%;">Space Gallery
+  </h2>
+  <p>
+    <strong><i style="background-color: rgb(244,244,244); color: black; padding:2px 4px; border-radius:3px;">
+    Explore breathtaking images of galaxies, nebulae, and deep-space objects captured by NASA, showcasing the vast beauty of the universe beyond our solar system.
+    </i></strong>
+  </p>
+
+  <div class="gallery-images" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 15px 0;">
+    <img src="assets/space1.jpg" alt="Galaxy 1" class="gallery-item">
+    <img src="assets/space0.jpg" alt="Nebula 2" class="gallery-item">
+    <img src="assets/space111.jpg" alt="Deep Space 3" class="gallery-item">
+    <img src="assets/space222.jpg" alt="Galaxy 4" class="gallery-item">
+    <img src="assets/space333.jpg" alt="Nebula 5" class="gallery-item">
+  </div>
+
+  <a href="space-gallery.html" class="btn page-link">See Space Images</a>
+</div>
+
+
+</section><hr>
+
+<section id="forecast-tracker" class="extra fade-up delay-2">
+  <div style="
+    display: flex; 
+    justify-content: center; 
+    align-items: stretch; 
+    flex-wrap: wrap; 
+    margin-top: -2%;
+    gap: 80px;">
+
+    <div class="glass-box fade-up delay-3" 
+         style="flex: 1; min-width: 320px; max-width: 540px; display: flex; flex-direction: column; justify-content: space-between;">
+      <h2 style="margin-bottom:6px;">
+        <img src="assets/sunny (1).png" style="width:2em; vertical-align:middle; margin-top:-2%;"> Forecast Tracker
+      </h2>
+      <p style="margin-bottom:6px;">
+        <strong>
+          <i style="background-color: rgb(244,244,244); color: black; padding:2px 4px; border-radius:3px;">
+            Stay ahead of the weather! Track daily and weekly forecasts including temperature, rainfall, wind, and storm alerts in real-time.
+          </i>
+        </strong>
+      </p>
+
+      <img src="planets/weather.jpg" 
+           alt="Forecast" 
+           class="illustration" 
+           style="width:100%; height:255px; object-fit:cover; border-radius:10px; margin:4px 0;">
+
+      <a href="forecast-live.html" class="btn page-link" style="margin-top:6px;">View Forecast</a>
+    </div>
+</section>
+
+<style>
+  .gallery-item {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+  }
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+</style>
+
+<script>
+window.addEventListener('scroll', function() {
+  if (window.innerWidth > 1024) { 
+    const scrollTop = window.scrollY;
+    const zoomAmount = 120 - scrollTop * 0.08; 
+    document.body.style.backgroundSize = zoomAmount + '% auto';
+  }
+});
+</script>
+<script src="js/script.js"></script>
+<script>
+  const memoryImg = document.getElementById("memory-img");
+  const memoryLink = document.getElementById("memory-link");)
+  const observer = new MutationObserver(() => {
+    memoryLink.href = memoryImg.src;
+  });
+
+  observer.observe(memoryImg, { attributes: true, attributeFilter: ['src'] });
+
+
+  memoryLink.href = memoryImg.src;
+</script>
+<div class="loader-overlay" id="loader">
+  <div class="loader-dots">
+    <div></div><div></div><div></div>
+  </div>
+</div>
+<script>
+document.querySelectorAll(".page-link").forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault(); 
+    const loader = document.getElementById("loader");
+    loader.classList.add("active");
+
+    setTimeout(() => {
+      window.location.href = this.href;
+    }, 1200); 
+  });
+});
+
+</script>
+<div class="dog-bot" id="dogBot" style="cursor:pointer; position: fixed; bottom: 20px; right: 20px; z-index: 10000;">
+  <img src="planets/dog.png" alt="Dog Bot" style="width: 60px; height: 60px; border-radius: 50%;">
+  <div class="dog-note" style="
+        background: rgba(0,0,0,0.6); 
+        backdrop-filter: blur(10px); 
+        -webkit-backdrop-filter: blur(10px);
+        color: #fff; 
+        padding: 10px 14px; 
+        border-radius: 12px;
+        max-width: 220px;
+        margin-top: 8px;
+        font-size: 0.9rem;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        ">
+    <strong>
+      <img src="assets/poodle.png" style="width:1.5em; vertical-align:middle;">
+      I’m eSPACE Bot
+    </strong><br>
+    Ask me anything!
+  </div>
+</div>
+
+<div class="loader-overlay" id="dogLoader">
+  <div class="loader-dots">
+    <div></div><div></div><div></div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const dogBot = document.getElementById("dogBot");
+  const dogLoader = document.getElementById("dogLoader");
+
+  dogBot.addEventListener("click", () => {
+    dogLoader.classList.add("active");
+
+    setTimeout(() => {
+      window.location.href = "ai-bot.html";
+    }, 1300);
+  });
+});
+</script>
+
+
+
+<script>
+  function toggleMenu() {
+    document.querySelector("nav ul.mobile").classList.toggle("show");
+  }
+
+  window.addEventListener("load", () => {
+    document.body.style.backgroundSize = "100% auto";
+  });
+
+  window.addEventListener("scroll", () => {
+    let zoom = 100 + window.scrollY / 50;
+    document.body.style.backgroundSize = zoom + "% auto";
+  });
+
+  window.onbeforeunload = () => {
+    window.scrollTo(0, 0);
+  };
+
+  const memoryImgEl = document.getElementById("memory-img");
+  const nasaNewsText = document.getElementById("nasa-news-text");
+
+  const backendURL = "https://espace-backend-1.onrender.com";
+
+async function loadNasaAPOD() {
+  try {
+    const res = await fetch(`${backendURL}/api/nasa/apod`);
+    const data = await res.json();
+
+    let imgUrl = data.url;
+    const linkUrl = data.url;
+
+    if (data.media_type === "video") {
+      const ytMatch = imgUrl.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]+)/);
+      if (ytMatch) {
+        const videoId = ytMatch[1];
+        imgUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+      } else {
+        imgUrl = "assets/batch222.jpg";
+      }
+    }
+
+    memoryImgEl.src = imgUrl;
+    memoryImgEl.alt = data.title;
+    document.getElementById("memory-link").href = linkUrl;
+
+  } catch (err) {
+    console.error("Failed to load NASA APOD:", err);
+    memoryImgEl.src = "assets/mem1.jpg";
+    memoryImgEl.alt = "Could not load image";
+    document.getElementById("memory-link").href = memoryImgEl.src;
+  }
+}
+
+
+  async function loadNasaNews() {
+    try {
+      const res = await fetch(`${backendURL}/api/nasa/news`);
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+      const data = await res.json();
+      nasaNewsText.innerHTML = `<strong>${data.date}:</strong> ${data.title}`;
+    } catch (err) {
+      console.error("Failed to fetch NASA news:", err);
+      nasaNewsText.textContent = "Could not fetch news.";
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    loadNasaAPOD();
+    loadNasaNews();
+  });
+
+  setInterval(loadNasaNews, 300000);
+</script>
+</body>
+</html>

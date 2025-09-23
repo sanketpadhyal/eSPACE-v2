@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>eSPACE | Solar System</title>
+<link rel="icon" type="image/png" href="favicon/ringed_planet (1).png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; outline:none; }
+  body {
+    font-family:'Arial', sans-serif;
+    color:white;
+    min-height:100vh;
+    background:url("assets/bg2.jpg") no-repeat center center fixed;
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    scroll-behavior:smooth;
+    align-items:center;
+    justify-content:flex-start;
+    padding-top:150px;
+  }
+
+  .carousel-container {
+    position:relative;
+    width:100%;
+    max-width:900px;
+    height:500px;
+    margin-bottom:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .planet-slide {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    cursor:pointer;
+  }
+  .planet-slide img {
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:none;
+    transition: transform 0.5s ease;
+    object-fit:contain;
+  }
+  .planet-slide[data-name="Saturn"] img {
+    width:auto;
+    max-width:80%;
+    height:auto;
+    border-radius:0;
+  }
+  .planet-slide img:hover { transform: scale(1.18) rotate(5deg); }
+  .planet-info { margin-top:10px; text-align:center; }
+  .planet-info h3 {
+    font-size:1.4rem;
+    font-weight:600;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif;
+    color:#00d4ff;
+    text-shadow: 1px 1px 5px rgba(0,212,255,0.5);
+  }
+  .planet-info p {
+    font-size:0.95rem;
+    color:rgba(255,255,255,0.75);
+    margin-top:3px;
+    font-style:italic;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.25s ease;
+    z-index: 10;
+    backdrop-filter: blur(6px);
+  }
+  .arrow-left { left: 15px; } 
+  .arrow-right { right: 15px; }
+  .arrow:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-50%) scale(1.05);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .modal-overlay {
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background:rgba(0,0,0,0.75);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    visibility:hidden;
+    transition:opacity 0.4s ease;
+    z-index:100;
+  }
+  .modal-overlay.active { opacity:1; visibility:visible; }
+  .modal-content {
+    background:rgba(0,0,0,0.95);
+    padding:35px 30px;
+    border-radius:15px;
+    max-width:400px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(0,212,255,0.6);
+    position:relative;
+    transform: scale(0.8);
+    transition: transform 0.4s ease;
+  }
+  .modal-overlay.active .modal-content { transform: scale(1); }
+  .modal-content img {
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin-bottom:20px;
+    object-fit:contain;
+  }
+  .modal-content h3 {
+    color:#00d4ff;
+    margin-bottom:12px;
+    font-size:1.5rem;
+    font-weight:600;
+    text-shadow: 1px 1px 5px rgba(0,212,255,0.5);
+  }
+  .modal-content p { font-size:1rem; line-height:1.6; }
+  .modal-close {
+    position:absolute;
+    top:12px; right:18px;
+    font-size:1.5rem;
+    color:#00d4ff;
+    cursor:pointer;
+    transition:color 0.3s ease, transform 0.3s ease;
+  }
+  .modal-close:hover { color:white; transform: scale(1.2); }
+
+  @media(max-width:768px){
+    .planet-slide img { width:130px; height:130px; }
+    .planet-slide[data-name="Saturn"] img { max-width:90%; }
+    .planet-info h3 { font-size:1.2rem; }
+    .planet-info p { font-size:0.8rem; }
+    .modal-content { padding:25px 20px; }
+  }
+  @media(max-width:480px){
+    .arrow { font-size:1.5rem; padding:8px 12px; }
+  }
+
+  .glass-title {
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 25px;
+    font-size: 1.6rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, #00d4ff, #0077ff, #9b00ff, #252525);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .research-planets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto 80px;
+  }
+  .planet-card {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  .planet-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 6px 20px rgba(0,212,255,0.4);
+  }
+  .planet-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  .planet-card h3 {
+    font-size: 1.2rem;
+    color: #00d4ff;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .planet-card p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+  }
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ffffff, transparent);
+  margin: 20px 0;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><span>e</span><span>SPACE</span></div>
+  <nav class="nav-glass-panel">
+    <ul class="desktop">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="quiz54327.html">Quiz</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="glass-title">
+  <img src="assets/ringed_planet.png" style="width:1.5em; margin-right:8px;">
+  <span class="gradient-text">OUR SOLAR SYSTEM PLANETS</span>
+</div>
+
+<section class="carousel-container">
+  <button class="arrow arrow-left">&#9664;</button>
+  <button class="arrow arrow-right">&#9654;</button>
+
+  <div class="planet-slide" data-name="Mercury" data-desc="Mercury is the closest planet to the Sun and the smallest in our solar system. It has a rocky surface, no atmosphere to retain heat, and experiences extreme temperature changes between day and night. Mercury completes an orbit around the Sun in just 88 Earth days." data-img="planets/mercury.png">
+    <img src="planets/mercury.png" alt="Mercury"><div class="planet-info"><h3>Mercury</h3><p><strong>Tap for details</strong></p></div>
+  </div>
+  <div class="planet-slide" data-name="Venus" data-desc="Venus is the second planet from the Sun and is similar in size to Earth. It has a thick carbon dioxide atmosphere that traps heat, making it the hottest planet in the Solar System. Its surface is covered with volcanoes and vast plains, and it rotates very slowly in the opposite direction to most planets." data-img="planets/venus.png">
+    <img src="planets/venus.png" alt="Venus"><div class="planet-info"><h3>Venus</h3><p><strong>Tap for details</strong></p></div>
+  </div>
+  <div class="planet-slide" data-name="Earth" data-desc=" The third planet from the Sun and our home. Earth is the only known planet to support life, with abundant liquid water, a protective atmosphere, and diverse ecosystems. It has one natural satellite (the Moon) and a dynamic surface shaped by plate tectonics, weather, and oceans." data-img="planets/earth.png">
+    <img src="planets/earth.png" alt="Earth"><div class="planet-info"><h3>Earth</h3><p><strong>Tap for details</strong></p></div>
+  </div>
+  <div class="planet-slide" data-name="Mars" data-desc="Mars is the fourth planet from the Sun, known as the Red Planet due to its iron oxide-rich soil. It has the largest volcano and canyon in the solar system, thin atmosphere, and polar ice caps. Mars is a major target for exploration and the search for past or present life." data-img="planets/mars.png">
+    <img src="planets/mars.png" alt="Mars"><div class="planet-info"><h3>Mars</h3><p><strong>Tap for details</strong></p></div>
+  </div>
+  <div class="planet-slide" data-name="Jupiter" data-desc="Jupiter is the largest planet in our solar system. It is a gas giant with a thick atmosphere mostly made of hydrogen and helium. Jupiter is famous for its Great Red Spot, a giant storm, and has dozens of moons, including Ganymede, the largest moon in the solar system." data-img="planets/jupiter.png">
+    <img src="planets/jupiter.png" alt="Jupiter"><div class="planet-info"><h3>Jupiter</h3><p><strong>Tap for details</strong></p></div>
+  </div>
+  <div class="planet-slide" data-name="Saturn" data-desc=" Saturn is the sixth planet from the Sun, famous for its magnificent ring system made of ice and rock. It is a gas giant with a thick atmosphere mostly of hydrogen and helium, and has over 80 moons, including Titan, the second-largest moon in the solar system." data-img="planets/saturn.png">
+    <img src="planets/saturn.png" alt="Saturn"><div class="planet-info"><h3>Saturn</h3><p><strong>Tap for details</strong></p></div>
+  </div>
+  <div class="planet-slide" data-name="Uranus" data-desc="Uranus is an ice giant with a pale blue color due to methane in its atmosphere. It has a unique tilt, rotating almost on its side, which causes extreme seasons. Uranus has faint rings and at least 27 known moons." data-img="planets/uranus.png">
+    <img src="planets/uranus.png" alt="Uranus"><div class="planet-info"><h3>Uranus</h3><p><strong>Tap for details</strong></p></div>
+  </div>
+  <div class="planet-slide" data-name="Neptune" data-desc="Neptune is the eighth and farthest known planet from the Sun. It is an ice giant with a deep blue color due to methane in its atmosphere. Neptune is known for having the fastest winds in the solar system and has faint rings and 14 known moons." data-img="planets/neptune.png">
+    <img src="planets/neptune.png" alt="Neptune"><div class="planet-info"><h3>Neptune</h3><p><strong>Tap for details</strong></p></div>
+  </div>
+</section>
+
+<div class="modal-overlay" id="planet-modal">
+  <div class="modal-content">
+    <span class="modal-close" id="modal-close">&times;</span>
+    <img src="" alt="planet" id="modal-img">
+    <h3 id="modal-title">Planet Name</h3>
+    <p id="modal-desc">Description</p>
+  </div>
+</div><hr style="margin-top: -03%;"><br><br><br><br>
+
+<div class="glass-title"><span class="gradient-text">TERRESTRIAL PLANETS</span></div>
+<section class="research-planets">
+  <div class="planet-card"><img src="planets/mercury.png"><h3>Mercury</h3><p>Small, rocky planet with extreme temperatures.</p></div>
+  <div class="planet-card"><img src="planets/venus.png"><h3>Venus</h3><p>Thick CO₂ atmosphere, hottest planet in the Solar System.</p></div>
+  <div class="planet-card"><img src="planets/earth.png"><h3>Earth</h3><p>The only known planet with life and liquid water.</p></div>
+  <div class="planet-card"><img src="planets/mars.png"><h3>Mars</h3><p>Studied for water traces and possible colonization.</p></div>
+</section>
+
+<div class="glass-title"><span class="gradient-text">GAS GIANTS</span></div>
+<section class="research-planets">
+  <div class="planet-card"><img src="planets/jupiter.png"><h3>Jupiter</h3><p>Largest planet, has a Great Red Spot storm.</p></div>
+  <div class="planet-card"><img src="planets/saturn.png"><h3>Saturn</h3><p>Known for its magnificent ring system.</p></div>
+</section>
+
+<div class="glass-title"><span class="gradient-text">ICE GIANTS</span></div>
+<section class="research-planets">
+  <div class="planet-card"><img src="planets/uranus.png"><h3>Uranus</h3><p>Tilted sideways, icy composition.</p></div>
+  <div class="planet-card"><img src="planets/neptune.png"><h3>Neptune</h3><p>Fastest winds, deep blue color.</p></div>
+</section>
+
+<div class="glass-title"><span class="gradient-text">NASA DISCOVERIES</span></div>
+<section class="research-planets">
+  <div class="planet-card"><img src="planets/1e.png"><h3>TRAPPIST-1e</h3><p>Earth-sized exoplanet in the habitable zone.</p></div>
+  <div class="planet-card"><img src="planets/1f.png"><h3>TRAPPIST-1f</h3><p>May contain liquid water, studied for habitability.</p></div>
+  <div class="planet-card"><img src="planets/1g.png"><h3>TRAPPIST-1g</h3><p>One of the largest TRAPPIST exoplanets.</p></div>
+  <div class="planet-card"><img src="planets/kepler.png"><h3>Kepler-452b</h3><p>Nicknamed "Earth 2.0", discovered in 2015.</p></div>
+</section>
+
+<div class="glass-title"><span class="gradient-text">ISRO DISCOVERIES</span></div>
+<section class="research-planets">
+  <div class="planet-card"><img src="planets/toi178b.png"><h3>TOI-178b</h3><p>Exoplanet system studied with international collaborations.</p></div>
+  <div class="planet-card"><img src="planets/toi178c.png"><h3>TOI-178c</h3><p>Part of a resonant planetary system with unique orbits.</p></div>
+</section>
+
+<script>
+const slides = document.querySelectorAll('.planet-slide');
+const modal = document.getElementById('planet-modal');
+const modalImg = document.getElementById('modal-img');
+const modalTitle = document.getElementById('modal-title');
+const modalDesc = document.getElementById('modal-desc');
+const modalClose = document.getElementById('modal-close');
+let currentIndex = 2;
+function showSlide(index){
+  slides.forEach((slide,i)=>{
+    gsap.to(slide,{
+      x:(i-index)*220,
+      scale:i===index?1:0.7,
+      opacity:i===index?1:0.5,
+      duration:0.5
+    });
+  });
+}
+showSlide(currentIndex);
+document.querySelector('.arrow-left').addEventListener('click',()=>{
+  currentIndex=(currentIndex-1+slides.length)%slides.length;
+  showSlide(currentIndex);
+});
+document.querySelector('.arrow-right').addEventListener('click',()=>{
+  currentIndex=(currentIndex+1)%slides.length;
+  showSlide(currentIndex);
+});
+slides.forEach((slide)=>{
+  slide.addEventListener('click',()=>{
+    modalImg.src = slide.dataset.img;
+    modalTitle.textContent = slide.dataset.name;
+    modalDesc.textContent = slide.dataset.desc;
+    modal.classList.add('active');
+  });
+});
+modalClose.addEventListener('click',()=>{ modal.classList.remove('active'); });
+modal.addEventListener('click',(e)=>{ if(e.target === modal) modal.classList.remove('active'); });
+</script>
+<script>
+(function() {
+  const originalLog = console.log;
+  console.log = function(msg) {
+    if (typeof msg === "string" && msg.includes("code")) {
+      originalLog("⚠️ Code not available");
+    } else {
+      originalLog(msg);
+    }
+  };
+})();
+
+const slides = document.querySelectorAll('.planet-slide');
+const modal = document.getElementById('planet-modal');
+const modalImg = document.getElementById('modal-img');
+const modalTitle = document.getElementById('modal-title');
+const modalDesc = document.getElementById('modal-desc');
+const modalClose = document.getElementById('modal-close');
+
+let currentIndex = 2;
+
+function showSlide(index){
+  slides.forEach((slide,i)=>{
+    gsap.to(slide,{
+      x:(i-index)*220,
+      scale:i===index?1:0.95,
+      opacity:i===index?1:0.6,
+      duration:0.5
+    });
+  });
+}
+
+showSlide(currentIndex);
+
+function openModal(slide){
+  modalImg.src = slide.dataset.img;
+  modalTitle.textContent = slide.dataset.name;
+  modalDesc.textContent = slide.dataset.desc;
+  modal.classList.add('active');
+}
+openModal(slides[currentIndex]);
+
+document.querySelector('.arrow-left').addEventListener('click',()=>{
+  currentIndex=(currentIndex-1+slides.length)%slides.length;
+  showSlide(currentIndex);
+});
+document.querySelector('.arrow-right').addEventListener('click',()=>{
+  currentIndex=(currentIndex+1)%slides.length;
+  showSlide(currentIndex);
+});
+slides.forEach((slide)=>{
+  slide.addEventListener('click',()=>{ openModal(slide); });
+});
+modalClose.addEventListener('click',()=>{ modal.classList.remove('active'); });
+modal.addEventListener('click',(e)=>{ if(e.target === modal) modal.classList.remove('active'); });
+</script>
+</body>
+</html>

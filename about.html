@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>eSPACE | About Developer</title>
+  <link rel="icon" type="image/png" href="favicon/sponge.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      color: white;
+      min-height: 100vh;
+      background: url("assets/bg.jpg") no-repeat center center fixed;
+      background-size: cover;
+      background-position: center 5%;
+      background-color: #000;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header, .glass-top, .glass-container {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeSlideUp 0.8s ease-out forwards;
+    }
+    header { animation-delay: 0.1s; }
+    .glass-top { animation-delay: 0.25s; }
+    .glass-container { animation-delay: 0.5s; }
+
+    @keyframes fadeSlideUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .glass-container {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 6%;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: stretch;
+      background: url('your-background.jpg') no-repeat center center/cover;
+    }
+
+    .glass-panel {
+      flex: 1 1 420px;
+      padding: 40px;
+      border-radius: 20px;
+      background: rgba(0, 0, 0, 0.589);
+      backdrop-filter: blur(10px) saturate(140%);
+      -webkit-backdrop-filter: blur(10px) saturate(140%);
+      border: 1px solid rgba(255, 255, 255, 0.395);
+      color: #f0f0f0;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .glass-panel:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .glass-panel h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #2600ffc0, #d0d4d7, #e7ebebc0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glass-panel p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #ddd;
+      flex-grow: 1;
+    }
+
+    .glass-top {
+      margin-top: 100px;
+      margin-left: 6%;
+      margin-right: 6%;
+      padding: 20px 30px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(42, 40, 40, 0.15);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      color: #ddd;
+    }
+
+    .glass-top h3 {
+      font-size: 1.3rem;
+      background: linear-gradient(90deg, #2600ff, #7b2ff7, #00f7ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .glass-top a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: opacity 0.3s ease;
+    }
+    .glass-top a:hover { opacity: 0.8; }
+
+    .glass-top img { width: 28px; height: 28px; }
+
+    @media(max-width: 900px) {
+      .glass-container { flex-direction: column; gap: 25px; }
+      .glass-top { flex-direction: column; align-items: flex-start; }
+    }
+
+    .gradient-underline {
+      display: inline-block;
+      position: relative;
+      font-size: 2rem;
+      background: linear-gradient(90deg, #2600ff, #7b2ff7, #00f7ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gradient-underline::after {
+      content: "";
+      position: absolute;
+      left: 15%;
+      bottom: -2px;
+      width: 60%;
+      height: 3px;
+      background: linear-gradient(90deg, #2600ff, #7b2ff7, #00f7ff);
+      border-radius: 2px;
+    }
+
+    .dev-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    .dev-icons img {
+      width: 38px;
+      height: 38px;
+      transition: transform 0.3s ease;
+    }
+    .dev-icons img:hover { transform: scale(1.15); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><span>e</span><span>SPACE</span></div>
+    <nav class="nav-glass-panel">
+      <ul class="desktop">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="quiz54327.html">Quiz</a></li>
+        <li><a href="releases.html">Releases</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <div class="glass-top">
+    <h3>
+      <img src="extra/link (1).png" style="width:1.5em; vertical-align:middle; margin-top:-1px;">
+      Navigate & Connect
+    </h3>
+    <a href="https://github.com/sanketpadhyal" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      <span>github.com/sanketpadhyal</span>
+    </a>
+  </div>
+
+  <main class="glass-container">
+
+    <section class="glass-panel left-panel">
+      <h2 class="gradient-underline">
+        <img src="favicon/ice_cube.png" style="width:1.5em; vertical-align:middle; margin-top:-1px;"> 
+        About Website
+      </h2>
+      <p>
+        <img src="favicon/earth-png-15.png" style="width:1.8em; vertical-align:middle; margin-top:-2px;"> 
+        <strong>Space Explorer Web Project</strong><br><br>
+        An immersive web application designed to bring space content to your fingertips. The site combines:
+      </p>
+
+      <ul style="margin-top:15px; line-height:1.8; color:#ccc; padding-left:18px;">
+        <li><img src="extra/rocket (2).png" style="width:1.5em; vertical-align:middle; margin-top:-1%;"> NASA APOD daily images and astronomy facts</li>
+        <li><img src="extra/telescope (1).png" style="width:1.5em; vertical-align:middle; margin-top:-1%;"> Archived data and live images from Mars rovers</li>
+        <li><img src="extra/cloud (2).png" style="width:1.5em; vertical-align:middle; margin-top:-1%;"> Weather & astronomy forecasting tools</li>
+        <li><img src="extra/airplane (1).png" style="width:1.5em; vertical-align:middle; margin-top:-1%;"> Conversational AI assistant for space queries</li>
+        <li><img src="extra/satellite_antenna (2).png" style="width:1.5em; vertical-align:middle; margin-top:-1%;"> Galleries of missions, satellites, and space tech</li>
+      </ul>
+
+      <p style="margin-top:20px;">
+        <img src="extra/comet (1).png" style="width:1.5em; vertical-align:middle; margin-top:-1%;"> 
+        <strong>eSPACE v2</strong> is an evolving project focusing on UX, responsiveness, clean design, and interactivity.
+      </p>
+    </section>
+
+    <section class="glass-panel right-panel">
+      <h2 class="gradient-underline">
+        <img src="assets/male-technologist.png" style="width:1.5em; vertical-align:middle; margin-top:-1px;"> 
+        About Developer
+      </h2>
+      <p>
+        Hello <img src="extra/wave (2).png" style="width:1.5em; vertical-align:middle; margin-top:-1%;"> 
+        I’m <strong>Sanket Padhyal</strong>, a web developer passionate about bridging the gap between tech & space. 
+        My focus is on clean, functional design and problem-solving.<br><br>
+        
+        <strong>Tech Stack:</strong><br>
+        • NASA API integrations<br>
+        • HTML5 / CSS3 / Tailwind CSS<br>
+        • Java & JavaScript<br>
+        • Node.js for backend<br>
+        • Hosting on Netlify (frontend) & Render (backend)<br><br>
+        
+        When not coding, I’m usually exploring astronomy projects, building tools, or contributing to open source.
+      </p>
+
+      <div class="dev-icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
