@@ -1,0 +1,3307 @@
+[
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Earth", "Mars", "Venus", "Jupiter"],
+    "answer": 1
+  },
+  {
+    "question": "What is the powerhouse of the cell?",
+    "options": ["Nucleus", "Ribosome", "Mitochondrion", "Chloroplast"],
+    "answer": 2
+  },
+  {
+    "question": "What is the closest star to Earth?",
+    "options": ["Proxima Centauri", "Sirius", "Sun", "Alpha Centauri"],
+    "answer": 2
+  },
+  {
+    "question": "What is the process by which plants make their own food?",
+    "options": [
+      "Respiration",
+      "Transpiration",
+      "Photosynthesis",
+      "Germination"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "options": ["Earth", "Saturn", "Jupiter", "Neptune"],
+    "answer": 2
+  },
+  {
+    "question": "How many bones are in the adult human body?",
+    "options": ["206", "212", "198", "220"],
+    "answer": 0
+  },
+  {
+    "question": "Which galaxy is the Milky Way on a collision course with?",
+    "options": ["Triangulum", "Andromeda", "Sombrero", "Pinwheel"],
+    "answer": 1
+  },
+  {
+    "question": "What is the largest organ in the human body?",
+    "options": ["Liver", "Brain", "Heart", "Skin"],
+    "answer": 3
+  },
+  {
+    "question": "What is a light-year a unit of?",
+    "options": ["Time", "Distance", "Speed", "Luminosity"],
+    "answer": 1
+  },
+  {
+    "question": "Who is known as the father of genetics?",
+    "options": [
+      "Charles Darwin",
+      "Gregor Mendel",
+      "Louis Pasteur",
+      "Albert Einstein"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which planet has the most prominent ring system?",
+    "options": ["Jupiter", "Uranus", "Neptune", "Saturn"],
+    "answer": 3
+  },
+  {
+    "question": "What type of blood is the universal donor?",
+    "options": ["A+", "B-", "AB+", "O-"],
+    "answer": 3
+  },
+  {
+    "question": "Who was the first human to walk on the moon?",
+    "options": [
+      "Yuri Gagarin",
+      "Buzz Aldrin",
+      "Neil Armstrong",
+      "Michael Collins"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the main component of a plant's cell wall?",
+    "options": ["Chitin", "Peptidoglycan", "Cellulose", "Lignin"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the theory that describes the origin of the universe?",
+    "options": [
+      "String Theory",
+      "General Relativity",
+      "Quantum Mechanics",
+      "The Big Bang Theory"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "Which part of the brain controls balance and coordination?",
+    "options": ["Cerebrum", "Cerebellum", "Medulla oblongata", "Hypothalamus"],
+    "answer": 1
+  },
+  {
+    "question": "What is a black hole?",
+    "options": [
+      "A very bright star",
+      "A planet without an atmosphere",
+      "A region of spacetime where gravity is extremely strong",
+      "A cloud of cosmic dust"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which gas do plants absorb from the atmosphere for photosynthesis?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the NASA rover that landed on Mars in 2021?",
+    "options": ["Curiosity", "Spirit", "Opportunity", "Perseverance"],
+    "answer": 3
+  },
+  {
+    "question": "What are the building blocks of proteins?",
+    "options": ["Nucleotides", "Monosaccharides", "Fatty acids", "Amino acids"],
+    "answer": 3
+  },
+  {
+    "question": "Which planet is closest to the Sun?",
+    "options": ["Venus", "Mercury", "Earth", "Mars"],
+    "answer": 1
+  },
+  {
+    "question": "What is the double helix structure associated with?",
+    "options": ["RNA", "Proteins", "DNA", "Carbohydrates"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the largest volcano in the solar system, located on Mars?",
+    "options": ["Mount Everest", "Mauna Kea", "Olympus Mons", "Vesuvius"],
+    "answer": 2
+  },
+  {
+    "question": "What is the green pigment in plants that captures light energy?",
+    "options": ["Carotene", "Xanthophyll", "Chlorophyll", "Anthocyanin"],
+    "answer": 2
+  },
+  {
+    "question": "What does 'NASA' stand for?",
+    "options": [
+      "National Aeronautics and Space Administration",
+      "North American Space Agency",
+      "National Aerospace and Science Administration",
+      "National Aeronautical Space Association"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which kingdom do mushrooms belong to?",
+    "options": ["Plantae", "Animalia", "Fungi", "Protista"],
+    "answer": 2
+  },
+  {
+    "question": "What is the term for a star that has collapsed under its own gravity?",
+    "options": ["Protostar", "Red Giant", "Supernova", "Neutron Star"],
+    "answer": 3
+  },
+  {
+    "question": "What is the process of cell division that results in two identical daughter cells?",
+    "options": ["Meiosis", "Mitosis", "Budding", "Fusion"],
+    "answer": 1
+  },
+  {
+    "question": "Which of Jupiter's moons is known for its volcanic activity?",
+    "options": ["Europa", "Ganymede", "Callisto", "Io"],
+    "answer": 3
+  },
+  {
+    "question": "What is the primary function of red blood cells?",
+    "options": [
+      "Fighting infection",
+      "Carrying oxygen",
+      "Clotting blood",
+      "Producing antibodies"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the Oort Cloud?",
+    "options": [
+      "A cluster of galaxies",
+      "A theoretical cloud of icy planetesimals",
+      "The asteroid belt",
+      "A nebula"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which animal has the longest lifespan?",
+    "options": [
+      "Galapagos Tortoise",
+      "Bowhead Whale",
+      "Greenland Shark",
+      "Ocean Quahog"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "options": ["Oxygen", "Argon", "Nitrogen", "Carbon Dioxide"],
+    "answer": 2
+  },
+  {
+    "question": "What is the study of fossils called?",
+    "options": ["Archaeology", "Paleontology", "Geology", "Anthropology"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first artificial satellite launched into space?",
+    "options": ["Explorer 1", "Sputnik 1", "Vostok 1", "Mariner 1"],
+    "answer": 1
+  },
+  {
+    "question": "What is the process of converting sugar into energy in cells?",
+    "options": [
+      "Photosynthesis",
+      "Cellular Respiration",
+      "Digestion",
+      "Fermentation"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which planet is known for its Great Red Spot, a giant storm?",
+    "options": ["Saturn", "Jupiter", "Neptune", "Uranus"],
+    "answer": 1
+  },
+  {
+    "question": "What is the largest artery in the human body?",
+    "options": [
+      "Femoral artery",
+      "Pulmonary artery",
+      "Aorta",
+      "Carotid artery"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the term for a celestial body that orbits a star and has cleared its neighborhood?",
+    "options": ["Moon", "Asteroid", "Planet", "Comet"],
+    "answer": 2
+  },
+  {
+    "question": "What are the tiny air sacs in the lungs where gas exchange occurs?",
+    "options": ["Bronchi", "Trachea", "Alveoli", "Capillaries"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of our galaxy?",
+    "options": ["Andromeda", "Triangulum", "Pinwheel", "The Milky Way"],
+    "answer": 3
+  },
+  {
+    "question": "What is the scientific name for the modern human species?",
+    "options": [
+      "Homo erectus",
+      "Homo habilis",
+      "Homo neanderthalensis",
+      "Homo sapiens"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is the phase of the moon when it is not visible from Earth?",
+    "options": ["Full Moon", "New Moon", "First Quarter", "Waxing Crescent"],
+    "answer": 1
+  },
+  {
+    "question": "Which part of the plant absorbs water and nutrients from the soil?",
+    "options": ["Leaf", "Stem", "Flower", "Root"],
+    "answer": 3
+  },
+  {
+    "question": "What force governs the motion of planets?",
+    "options": [
+      "Electromagnetism",
+      "Strong Nuclear Force",
+      "Gravity",
+      "Weak Nuclear Force"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the liquid component of blood?",
+    "options": ["Plasma", "Platelets", "Hemoglobin", "Lymph"],
+    "answer": 0
+  },
+  {
+    "question": "Which telescope was launched in 2021 as the successor to Hubble?",
+    "options": [
+      "Kepler Space Telescope",
+      "Spitzer Space Telescope",
+      "James Webb Space Telescope",
+      "Chandra X-ray Observatory"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the process of change in the heritable characteristics of biological populations over successive generations?",
+    "options": ["Metamorphosis", "Evolution", "Adaptation", "Mutation"],
+    "answer": 1
+  },
+  {
+    "question": "What is the layer of the sun's atmosphere that is visible during a total solar eclipse?",
+    "options": ["Photosphere", "Chromosphere", "Corona", "Core"],
+    "answer": 2
+  },
+  {
+    "question": "Which organ produces insulin?",
+    "options": ["Liver", "Pancreas", "Kidney", "Spleen"],
+    "answer": 1
+  },
+  {
+    "question": "How long does it take for light from the Sun to reach Earth?",
+    "options": ["8.3 seconds", "8.3 minutes", "8.3 hours", "8.3 days"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the system that circulates blood in the body?",
+    "options": [
+      "Respiratory System",
+      "Nervous System",
+      "Digestive System",
+      "Circulatory System"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is an exoplanet?",
+    "options": [
+      "A planet in our solar system",
+      "A dwarf planet",
+      "A planet outside our solar system",
+      "A moon of Jupiter"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the hardest substance in the human body?",
+    "options": ["Bone", "Dentin", "Enamel", "Keratin"],
+    "answer": 2
+  },
+  {
+    "question": "Which U.S. space program was responsible for landing the first humans on the Moon?",
+    "options": [
+      "Mercury Program",
+      "Gemini Program",
+      "Apollo Program",
+      "Space Shuttle Program"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the study of insects called?",
+    "options": ["Ornithology", "Entomology", "Herpetology", "Ichthyology"],
+    "answer": 1
+  },
+  {
+    "question": "What are the rings of Saturn primarily made of?",
+    "options": [
+      "Gas and dust",
+      "Rock and metal",
+      "Ice particles and rock",
+      "Liquid hydrogen"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which vitamin is produced in the skin upon exposure to sunlight?",
+    "options": ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin B12"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the boundary around a black hole beyond which nothing can escape?",
+    "options": [
+      "Photon Sphere",
+      "Ergosphere",
+      "Event Horizon",
+      "Accretion Disk"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "In which organelle does photosynthesis take place?",
+    "options": ["Mitochondrion", "Ribosome", "Nucleus", "Chloroplast"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name for a large cloud of gas and dust in space?",
+    "options": ["Galaxy", "Nebula", "Star Cluster", "Quasar"],
+    "answer": 1
+  },
+  {
+    "question": "What is the common name for the trachea?",
+    "options": ["Voice box", "Food pipe", "Windpipe", "Throat"],
+    "answer": 2
+  },
+  {
+    "question": "What is the Kuiper Belt?",
+    "options": [
+      "The main asteroid belt",
+      "A region of the solar system beyond Neptune",
+      "A ring system of Saturn",
+      "A cluster of stars"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the main function of the kidneys?",
+    "options": [
+      "Digesting food",
+      "Filtering blood and producing urine",
+      "Pumping blood",
+      "Producing hormones"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What causes the seasons on Earth?",
+    "options": [
+      "The distance from the Sun",
+      "The tilt of Earth's axis",
+      "The speed of Earth's rotation",
+      "Solar flares"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name for the molecule that carries genetic instructions?",
+    "options": [
+      "Ribonucleic acid (RNA)",
+      "Amino acid",
+      "Deoxyribonucleic acid (DNA)",
+      "Protein"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which of these is a dwarf planet?",
+    "options": ["Mercury", "Mars", "Pluto", "Titan"],
+    "answer": 2
+  },
+  {
+    "question": "What are vertebrates?",
+    "options": [
+      "Animals with an exoskeleton",
+      "Animals with a backbone",
+      "Insects",
+      "Single-celled organisms"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Who was the first woman in space?",
+    "options": [
+      "Sally Ride",
+      "Valentina Tereshkova",
+      "Svetlana Savitskaya",
+      "Mae Jemison"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the study of plants called?",
+    "options": ["Zoology", "Mycology", "Botany", "Ecology"],
+    "answer": 2
+  },
+  {
+    "question": "What is the term for the explosion of a massive star?",
+    "options": ["Nova", "Supernova", "Hypernova", "Black Hole Formation"],
+    "answer": 1
+  },
+  {
+    "question": "What is the process of a liquid turning into a gas called?",
+    "options": ["Condensation", "Evaporation", "Sublimation", "Freezing"],
+    "answer": 1
+  },
+  {
+    "question": "Which is the smallest planet in our solar system?",
+    "options": ["Mars", "Venus", "Mercury", "Earth"],
+    "answer": 2
+  },
+  {
+    "question": "What kind of animal is a mammal?",
+    "options": [
+      "A cold-blooded animal",
+      "A warm-blooded vertebrate with hair or fur",
+      "An animal that lays eggs",
+      "An invertebrate"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the rover that discovered evidence of water on Mars?",
+    "options": ["Sojourner", "Spirit", "Curiosity", "Viking 1"],
+    "answer": 2
+  },
+  {
+    "question": "Which human sense is most closely linked to memory?",
+    "options": ["Sight", "Hearing", "Smell", "Touch"],
+    "answer": 2
+  },
+  {
+    "question": "What is the brightest star in the night sky?",
+    "options": ["Sirius", "Polaris", "Betelgeuse", "Vega"],
+    "answer": 0
+  },
+  {
+    "question": "What is pollination?",
+    "options": [
+      "The process of seed growth",
+      "The transfer of pollen from anther to stigma",
+      "The production of nectar",
+      "The absorption of water by roots"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is a solar flare?",
+    "options": [
+      "A shadow on the sun",
+      "A cool spot on the sun",
+      "An intense eruption of electromagnetic radiation",
+      "The sun's outer atmosphere"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which part of the cell contains the genetic material?",
+    "options": ["Cytoplasm", "Cell membrane", "Nucleus", "Vacuole"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the North Star?",
+    "options": ["Sirius", "Vega", "Rigel", "Polaris"],
+    "answer": 3
+  },
+  {
+    "question": "What is the largest land animal?",
+    "options": ["Elephant", "Rhinoceros", "Giraffe", "Hippopotamus"],
+    "answer": 0
+  },
+  {
+    "question": "What areauroras (Northern and Southern Lights) caused by?",
+    "options": [
+      "Reflections from the moon",
+      "Particles from the solar wind interacting with the atmosphere",
+      "Weather patterns",
+      "Pollution"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What does a paleontologist study?",
+    "options": [
+      "Ancient cultures",
+      "Rocks and minerals",
+      "Fossils",
+      "Stars and planets"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the term for the path an object takes around another in space?",
+    "options": ["Trajectory", "Orbit", "Rotation", "Axis"],
+    "answer": 1
+  },
+  {
+    "question": "What is the function of the ribosome in a cell?",
+    "options": [
+      "Energy production",
+      "Waste disposal",
+      "Protein synthesis",
+      "Storing water"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the most common type of star in the Milky Way?",
+    "options": ["Blue giants", "White dwarfs", "Red dwarfs", "Yellow dwarfs"],
+    "answer": 2
+  },
+  {
+    "question": "Which disease is caused by a deficiency of Vitamin C?",
+    "options": ["Rickets", "Scurvy", "Beriberi", "Pellagra"],
+    "answer": 1
+  },
+  {
+    "question": "What is the main component of the Sun?",
+    "options": [
+      "Helium and Oxygen",
+      "Hydrogen and Helium",
+      "Carbon and Nitrogen",
+      "Iron and Nickel"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "How many chambers does the human heart have?",
+    "options": ["Two", "Three", "Four", "Five"],
+    "answer": 2
+  },
+  {
+    "question": "What is a 'shooting star'?",
+    "options": [
+      "A falling star",
+      "A comet",
+      "A meteoroid burning up in the atmosphere",
+      "A distant satellite"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the largest type of cat in the world?",
+    "options": ["Lion", "Siberian Tiger", "Jaguar", "Leopard"],
+    "answer": 1
+  },
+  {
+    "question": "What is the difference between a meteoroid, meteor, and meteorite?",
+    "options": [
+      "There is no difference",
+      "Location: space, atmosphere, ground",
+      "Size",
+      "Composition"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the main function of white blood cells?",
+    "options": [
+      "Transporting oxygen",
+      "Clotting blood",
+      "Fighting infection",
+      "Carrying nutrients"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the phenomenon where light is bent as it passes through a gravitational field?",
+    "options": [
+      "Gravitational Lensing",
+      "Refraction",
+      "Diffraction",
+      "Redshift"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What do you call a group of lions?",
+    "options": ["A herd", "A pack", "A pride", "A flock"],
+    "answer": 2
+  },
+  {
+    "question": "Which moon of Saturn is known for its dense atmosphere, thicker than Earth's?",
+    "options": ["Enceladus", "Titan", "Rhea", "Iapetus"],
+    "answer": 1
+  },
+  {
+    "question": "What is the process where a snake sheds its skin?",
+    "options": ["Moulting", "Ecdysis", "Hibernation", "Metamorphosis"],
+    "answer": 1
+  },
+  {
+    "question": "What is the speed of light?",
+    "options": [
+      "300,000 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does ATP stand for in biology?",
+    "options": [
+      "Adenosine Triphosphate",
+      "Adenine Tetraphosphate",
+      "Alanine Triphosphate",
+      "Adenosine Diphosphate"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the 'Goldilocks Zone' in astronomy?",
+    "options": [
+      "The region around a star where it is hottest",
+      "A zone with many asteroids",
+      "The habitable zone where liquid water could exist",
+      "The area where planets are formed"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which of these is not a primate?",
+    "options": ["Lemur", "Human", "Gorilla", "Rodent"],
+    "answer": 3
+  },
+  {
+    "question": "How old is the universe approximately?",
+    "options": [
+      "4.5 billion years",
+      "13.8 billion years",
+      "10 billion years",
+      "20 billion years"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the xylem in a plant responsible for?",
+    "options": [
+      "Transporting sugar",
+      "Transporting water and minerals",
+      "Photosynthesis",
+      "Reproduction"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the space mission that first landed humans on the moon?",
+    "options": ["Apollo 11", "Gemini 4", "Vostok 1", "Mercury 7"],
+    "answer": 0
+  },
+  {
+    "question": "What is the term for an organism that can produce its own food?",
+    "options": ["Heterotroph", "Autotroph", "Decomposer", "Consumer"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the closest galaxy to the Milky Way?",
+    "options": [
+      "Andromeda",
+      "Triangulum",
+      "Canis Major Dwarf Galaxy",
+      "Sagittarius Dwarf Galaxy"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which muscle is the strongest in the human body by weight?",
+    "options": ["Gluteus Maximus", "Masseter (jaw muscle)", "Heart", "Biceps"],
+    "answer": 1
+  },
+  {
+    "question": "What is a pulsar?",
+    "options": [
+      "A type of galaxy",
+      "A rapidly rotating neutron star",
+      "A variable star",
+      "A baby star"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the scientific study of birds called?",
+    "options": ["Herpetology", "Ornithology", "Mammalogy", "Ichthyology"],
+    "answer": 1
+  },
+  {
+    "question": "Which space probe was the first to visit Jupiter, Saturn, Uranus, and Neptune?",
+    "options": ["Pioneer 10", "Voyager 1", "Voyager 2", "New Horizons"],
+    "answer": 2
+  },
+  {
+    "question": "What is the function of the cornea?",
+    "options": [
+      "To detect color",
+      "To focus light onto the retina",
+      "To control the amount of light entering the eye",
+      "To send signals to the brain"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the main asteroid belt located between?",
+    "options": [
+      "Earth and Mars",
+      "Mars and Jupiter",
+      "Jupiter and Saturn",
+      "Venus and Earth"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is a symbiotic relationship where both organisms benefit?",
+    "options": ["Parasitism", "Commensalism", "Mutualism", "Competition"],
+    "answer": 2
+  },
+  {
+    "question": "What is 'dark matter'?",
+    "options": [
+      "The material inside black holes",
+      "Matter that emits no light or energy",
+      "A type of cosmic dust",
+      "The opposite of matter"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the larynx commonly known as?",
+    "options": [
+      "The windpipe",
+      "The voice box",
+      "The food pipe",
+      "The eardrum"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the phenomenon of the universe expanding at an accelerating rate attributed to?",
+    "options": ["Dark Matter", "Dark Energy", "Gravity", "Black Holes"],
+    "answer": 1
+  },
+  {
+    "question": "Which mammal is capable of true flight?",
+    "options": ["Flying squirrel", "Bat", "Sugar glider", "Pterosaur"],
+    "answer": 1
+  },
+  {
+    "question": "Which planet rotates on its side?",
+    "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+    "answer": 2
+  },
+  {
+    "question": "What are chromosomes made of?",
+    "options": [
+      "Protein only",
+      "RNA and protein",
+      "DNA and protein",
+      "DNA only"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the 'cosmic microwave background'?",
+    "options": [
+      "Radio signals from aliens",
+      "Light from distant galaxies",
+      "Radiation left over from the Big Bang",
+      "Dust clouds blocking starlight"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name for the 'master gland' of the endocrine system?",
+    "options": [
+      "Thyroid gland",
+      "Adrenal gland",
+      "Pituitary gland",
+      "Pancreas"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the largest moon in the solar system?",
+    "options": ["Titan", "Ganymede", "The Moon", "Triton"],
+    "answer": 1
+  },
+  {
+    "question": "What is the process of water moving through a plant and evaporating from its leaves?",
+    "options": ["Respiration", "Photosynthesis", "Transpiration", "Guttation"],
+    "answer": 2
+  },
+  {
+    "question": "Which constellation contains the 'Big Dipper'?",
+    "options": ["Orion", "Ursa Major", "Cassiopeia", "Leo"],
+    "answer": 1
+  },
+  {
+    "question": "What is the primary gas found in the atmosphere of Mars?",
+    "options": ["Oxygen", "Nitrogen", "Argon", "Carbon Dioxide"],
+    "answer": 3
+  },
+  {
+    "question": "What is the part of the nervous system responsible for the 'fight or flight' response?",
+    "options": [
+      "Parasympathetic nervous system",
+      "Sympathetic nervous system",
+      "Central nervous system",
+      "Somatic nervous system"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is a globular cluster?",
+    "options": [
+      "A young group of stars",
+      "A spherical collection of old stars",
+      "A type of nebula",
+      "A small galaxy"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the smallest bone in the human body?",
+    "options": ["Incus", "Malleus", "Stapes", "Phalange"],
+    "answer": 2
+  },
+  {
+    "question": "What type of galaxy is the Milky Way?",
+    "options": ["Elliptical", "Irregular", "Spiral", "Lenticular"],
+    "answer": 2
+  },
+  {
+    "question": "Which creature has three hearts?",
+    "options": ["Earthworm", "Starfish", "Octopus", "Jellyfish"],
+    "answer": 2
+  },
+  {
+    "question": "What is the process of nuclear fusion?",
+    "options": [
+      "Splitting a heavy atomic nucleus",
+      "Combining light atomic nuclei to form a heavier one",
+      "Radioactive decay",
+      "Electron capture"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the protein that gives skin, hair, and nails their hardness?",
+    "options": ["Collagen", "Elastin", "Keratin", "Melanin"],
+    "answer": 2
+  },
+  {
+    "question": "What are the Van Allen belts?",
+    "options": [
+      "Regions of intense solar wind",
+      "Zones of charged particles trapped by Earth's magnetic field",
+      "The asteroid belts",
+      "The rings of Saturn"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the process of a caterpillar turning into a butterfly called?",
+    "options": ["Evolution", "Metamorphosis", "Growth", "Moulting"],
+    "answer": 1
+  },
+  {
+    "question": "Which of these is not a layer of the Earth's atmosphere?",
+    "options": ["Troposphere", "Stratosphere", "Magnetosphere", "Mesosphere"],
+    "answer": 2
+  },
+  {
+    "question": "What type of joint is the shoulder?",
+    "options": [
+      "Hinge joint",
+      "Pivot joint",
+      "Saddle joint",
+      "Ball-and-socket joint"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the first interstellar object detected passing through the Solar System?",
+    "options": ["'Oumuamua", "Borisov", "Halley's Comet", "Ceres"],
+    "answer": 0
+  },
+  {
+    "question": "Which phylum does the jellyfish belong to?",
+    "options": ["Porifera", "Cnidaria", "Mollusca", "Echinodermata"],
+    "answer": 1
+  },
+  {
+    "question": "Which planet has the longest day?",
+    "options": ["Jupiter", "Venus", "Mercury", "Earth"],
+    "answer": 1
+  },
+  {
+    "question": "What is the main purpose of the appendix in humans?",
+    "options": [
+      "Digestion of cellulose",
+      "Hormone production",
+      "It has no known purpose",
+      "A safe house for good bacteria"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the mission that sent the first probe to Pluto?",
+    "options": ["Voyager 1", "Pioneer 11", "Galileo", "New Horizons"],
+    "answer": 3
+  },
+  {
+    "question": "What is the process of breaking down food into smaller molecules?",
+    "options": ["Absorption", "Respiration", "Digestion", "Circulation"],
+    "answer": 2
+  },
+  {
+    "question": "What is a 'brown dwarf'?",
+    "options": [
+      "A type of red dwarf star",
+      "An object too small to be a star but too large for a planet",
+      "A dead star",
+      "A planet with a dark surface"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which of these animals is a marsupial?",
+    "options": ["Platypus", "Kangaroo", "Koala", "Wombat"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the supermassive black hole at the center of the Milky Way?",
+    "options": ["Cygnus X-1", "Sagittarius A*", "M87*", "Ton 618"],
+    "answer": 1
+  },
+  {
+    "question": "What is the study of fungi called?",
+    "options": ["Phycology", "Mycology", "Virology", "Bacteriology"],
+    "answer": 1
+  },
+  {
+    "question": "What is 'space junk'?",
+    "options": [
+      "Asteroids and comets",
+      "Defunct human-made objects in orbit",
+      "Cosmic dust",
+      "Alien artifacts"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the enzyme in saliva that begins to break down starch?",
+    "options": ["Pepsin", "Lipase", "Amylase", "Trypsin"],
+    "answer": 2
+  },
+  {
+    "question": "How many planets in our solar system have rings?",
+    "options": ["One", "Two", "Three", "Four"],
+    "answer": 3
+  },
+  {
+    "question": "What is the largest living structure on Earth?",
+    "options": [
+      "The giant sequoia tree",
+      "The blue whale",
+      "The Great Barrier Reef",
+      "The Pando aspen grove"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is a supernova remnant?",
+    "options": [
+      "A black hole",
+      "A neutron star",
+      "The structure resulting from the explosion of a star",
+      "A protostar"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which part of the eye is responsible for color vision?",
+    "options": ["Rods", "Cones", "Pupil", "Iris"],
+    "answer": 1
+  },
+  {
+    "question": "Which mission first put a man in orbit around the Earth?",
+    "options": [
+      "Vostok 1 (Yuri Gagarin)",
+      "Friendship 7 (John Glenn)",
+      "Apollo 8",
+      "Soyuz 1"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the role of the cerebellum?",
+    "options": [
+      "Memory and emotion",
+      "Breathing and heart rate",
+      "Motor control and balance",
+      "Vision and hearing"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the brightest object in our sky after the Sun and Moon?",
+    "options": ["Mars", "Jupiter", "Venus", "Sirius"],
+    "answer": 2
+  },
+  {
+    "question": "What is the pigment that gives skin its color?",
+    "options": ["Keratin", "Melanin", "Collagen", "Hemoglobin"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name for the scientific model of the universe's origin?",
+    "options": [
+      "Steady State Theory",
+      "Big Bang Theory",
+      "Oscillating Universe Theory",
+      "Eternal Inflation"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the function of platelets in the blood?",
+    "options": [
+      "Carry oxygen",
+      "Fight infection",
+      "Help blood clot",
+      "Transport nutrients"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the difference between a solar and lunar eclipse?",
+    "options": [
+      "Time of day",
+      "Sun or Moon is obscured",
+      "Duration of eclipse",
+      "Location on Earth"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the process by which bacteria reproduce?",
+    "options": ["Mitosis", "Meiosis", "Binary Fission", "Budding"],
+    "answer": 2
+  },
+  {
+    "question": "What is Halley's Comet?",
+    "options": [
+      "An asteroid",
+      "A short-period comet visible from Earth every 75-76 years",
+      "A dwarf planet",
+      "A moon of Jupiter"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the main function of the large intestine?",
+    "options": [
+      "Absorb nutrients",
+      "Produce digestive enzymes",
+      "Absorb water",
+      "Store bile"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which planet is sometimes called Earth's 'sister planet' due to its similar size and mass?",
+    "options": ["Mars", "Venus", "Mercury", "Jupiter"],
+    "answer": 1
+  },
+  {
+    "question": "What is a virus made of?",
+    "options": [
+      "A cell wall and nucleus",
+      "Genetic material (DNA or RNA) surrounded by a protein coat",
+      "Mitochondria and ribosomes",
+      "Only protein"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first space station?",
+    "options": ["Skylab", "Mir", "Salyut 1", "International Space Station"],
+    "answer": 2
+  },
+  {
+    "question": "Which tree is the tallest in the world?",
+    "options": [
+      "Giant Sequoia",
+      "Coast Redwood",
+      "Mountain Ash",
+      "Douglas Fir"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the term for the apparent shift in the position of a star due to the Earth's orbit?",
+    "options": ["Parallax", "Redshift", "Proper motion", "Aberration"],
+    "answer": 0
+  },
+  {
+    "question": "What does 'homeostasis' mean?",
+    "options": [
+      "A state of dormancy",
+      "The tendency to maintain a stable internal environment",
+      "The process of cell division",
+      "A type of symbiosis"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the main cause of tides on Earth?",
+    "options": [
+      "The Earth's rotation",
+      "Wind patterns",
+      "The Sun's gravity",
+      "The Moon's gravity"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "Which blood vessels carry blood away from the heart?",
+    "options": ["Veins", "Arteries", "Capillaries", "Venules"],
+    "answer": 1
+  },
+  {
+    "question": "What is the 'Great Attractor'?",
+    "options": [
+      "A supermassive black hole",
+      "A large galaxy cluster",
+      "A gravitational anomaly in intergalactic space",
+      "A theoretical wormhole"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the smallest bird in the world?",
+    "options": ["Sparrow", "Finch", "Hummingbird", "Bee Hummingbird"],
+    "answer": 3
+  },
+  {
+    "question": "What is the temperature of the surface of the Sun?",
+    "options": [
+      "Around 5,500 °C",
+      "Around 15,000 °C",
+      "Around 1,000,000 °C",
+      "Around 15,000,000 °C"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the role of the myelin sheath in a neuron?",
+    "options": [
+      "To produce neurotransmitters",
+      "To receive signals",
+      "To speed up nerve impulse transmission",
+      "To provide nutrients"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which of Saturn's moons is known for its geysers of water ice?",
+    "options": ["Titan", "Enceladus", "Rhea", "Mimas"],
+    "answer": 1
+  },
+  {
+    "question": "What is the study of animal behavior called?",
+    "options": ["Ecology", "Ethology", "Zoology", "Physiology"],
+    "answer": 1
+  },
+  {
+    "question": "What is a quasar?",
+    "options": [
+      "A type of star",
+      "An extremely luminous active galactic nucleus",
+      "A dust cloud",
+      "A protoplanetary disk"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the main structural component of an insect's exoskeleton?",
+    "options": ["Cellulose", "Chitin", "Keratin", "Bone"],
+    "answer": 1
+  },
+  {
+    "question": "How long is a day on Mars (a 'sol')?",
+    "options": [
+      "About 12 hours",
+      "About 24.6 hours",
+      "About 36 hours",
+      "About 1 Earth week"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the fluid-filled sac that surrounds a fetus in the womb?",
+    "options": ["Placenta", "Uterus", "Amniotic sac", "Cervix"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the point in a planet's orbit that is closest to the Sun?",
+    "options": ["Aphelion", "Perihelion", "Apogee", "Perigee"],
+    "answer": 1
+  },
+  {
+    "question": "Which reptile can change its skin color for camouflage?",
+    "options": ["Snake", "Turtle", "Chameleon", "Crocodile"],
+    "answer": 2
+  },
+  {
+    "question": "What is the Lagrange point?",
+    "options": [
+      "A point of no gravity",
+      "A point in space where the gravitational forces of two bodies balance",
+      "The center of a galaxy",
+      "The event horizon of a black hole"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the process by which a cell engulfs a large particle?",
+    "options": ["Exocytosis", "Phagocytosis", "Pinocytosis", "Osmosis"],
+    "answer": 1
+  },
+  {
+    "question": "What is the composition of the atmosphere of Venus?",
+    "options": [
+      "Mostly Nitrogen",
+      "Mostly Oxygen",
+      "Mostly Carbon Dioxide",
+      "Mostly Methane"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which of these is a cold-blooded animal?",
+    "options": ["Dog", "Eagle", "Lizard", "Whale"],
+    "answer": 2
+  },
+  {
+    "question": "What does the acronym SETI stand for?",
+    "options": [
+      "Search for Extraterrestrial Intelligence",
+      "Space Exploration and Technology Initiative",
+      "Solar Energy and Thermal Imaging",
+      "Satellite Examination of Terrestrial Ions"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the function of the gallbladder?",
+    "options": [
+      "Produce bile",
+      "Store and concentrate bile",
+      "Filter blood",
+      "Digest fats"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the largest asteroid in the asteroid belt?",
+    "options": ["Vesta", "Pallas", "Hygiea", "Ceres"],
+    "answer": 3
+  },
+  {
+    "question": "What is the term for a plant that lives for more than two years?",
+    "options": ["Annual", "Biennial", "Perennial", "Seasonal"],
+    "answer": 2
+  },
+  {
+    "question": "What is the Hertzsprung-Russell (H-R) diagram used for?",
+    "options": [
+      "Plotting the orbits of planets",
+      "Classifying galaxies",
+      "Plotting stars according to their luminosity and temperature",
+      "Mapping the cosmic microwave background"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What part of the blood is responsible for clotting?",
+    "options": ["Red blood cells", "White blood cells", "Plasma", "Platelets"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the Martian moon that is larger?",
+    "options": ["Deimos", "Phobos", "Europa", "Triton"],
+    "answer": 1
+  },
+  {
+    "question": "What is the classification for animals that eat both plants and meat?",
+    "options": ["Herbivore", "Carnivore", "Omnivore", "Insectivore"],
+    "answer": 2
+  },
+  {
+    "question": "What is the term for the alignment of three celestial bodies?",
+    "options": ["Conjunction", "Opposition", "Syzygy", "Occultation"],
+    "answer": 2
+  },
+  {
+    "question": "Which bone is also known as the collarbone?",
+    "options": ["Scapula", "Sternum", "Clavicle", "Humerus"],
+    "answer": 2
+  },
+  {
+    "question": "What is the 'Roche limit'?",
+    "options": [
+      "The maximum size of a star",
+      "The distance from a celestial body within which a second body will disintegrate",
+      "The edge of the solar system",
+      "The point of no return for a black hole"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name for the tiny pores on the surface of a leaf?",
+    "options": ["Cuticle", "Stomata", "Guard cells", "Veins"],
+    "answer": 1
+  },
+  {
+    "question": "What is the Chandler wobble?",
+    "options": [
+      "A small deviation in the Earth's axis of rotation",
+      "The orbit of a distant planet",
+      "A type of solar flare",
+      "The precession of Mercury's orbit"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the pigment that protects skin from UV radiation?",
+    "options": ["Carotene", "Hemoglobin", "Melanin", "Chlorophyll"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the first human-made object to leave the solar system?",
+    "options": ["Pioneer 10", "Voyager 1", "New Horizons", "Voyager 2"],
+    "answer": 1
+  },
+  {
+    "question": "Which chamber of the heart receives oxygenated blood from the lungs?",
+    "options": [
+      "Right Atrium",
+      "Right Ventricle",
+      "Left Atrium",
+      "Left Ventricle"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is a 'blazar'?",
+    "options": [
+      "A type of pulsar",
+      "A compact quasar associated with a supermassive black hole",
+      "A blue giant star",
+      "A failed star"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the tube that connects the throat to the stomach?",
+    "options": ["Trachea", "Esophagus", "Larynx", "Aorta"],
+    "answer": 1
+  },
+  {
+    "question": "What is the most distant man-made object from Earth?",
+    "options": ["Voyager 2", "Pioneer 10", "Voyager 1", "New Horizons"],
+    "answer": 2
+  },
+  {
+    "question": "What is the study of tissues called?",
+    "options": ["Cytology", "Histology", "Anatomy", "Physiology"],
+    "answer": 1
+  },
+  {
+    "question": "Which of these is a greenhouse gas?",
+    "options": ["Oxygen", "Nitrogen", "Methane", "Argon"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the process that allows some animals to regrow lost body parts?",
+    "options": ["Replication", "Regeneration", "Reproduction", "Respiration"],
+    "answer": 1
+  },
+  {
+    "question": "What is a 'magnetar'?",
+    "options": [
+      "A type of star with an extremely powerful magnetic field",
+      "A magnetic planet",
+      "A region in space with no magnetic field",
+      "A failed star"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the part of the flower that produces pollen?",
+    "options": ["Stigma", "Ovary", "Anther", "Petal"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the largest known star?",
+    "options": ["Betelgeuse", "Sirius", "UY Scuti", "Rigel"],
+    "answer": 2
+  },
+  {
+    "question": "Which part of the human brain is responsible for processing visual information?",
+    "options": [
+      "Frontal lobe",
+      "Temporal lobe",
+      "Parietal lobe",
+      "Occipital lobe"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is the 'solar wind'?",
+    "options": [
+      "The atmosphere of the Sun",
+      "A stream of charged particles released from the Sun",
+      "Light from the Sun",
+      "The magnetic field of the Sun"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the common name for the sternum?",
+    "options": ["Shoulder blade", "Collarbone", "Breastbone", "Shin bone"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the process that powers stars?",
+    "options": [
+      "Nuclear Fission",
+      "Chemical Reaction",
+      "Nuclear Fusion",
+      "Radioactive Decay"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the fastest land animal?",
+    "options": ["Lion", "Pronghorn", "Cheetah", "Wildebeest"],
+    "answer": 2
+  },
+  {
+    "question": "What is the term for a year that has an extra day?",
+    "options": ["Solar year", "Lunar year", "Leap year", "Sidereal year"],
+    "answer": 2
+  },
+  {
+    "question": "What are the four bases in DNA?",
+    "options": ["A, G, C, U", "A, G, C, T", "A, P, G, T", "U, C, T, P"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first private company to send astronauts to the ISS?",
+    "options": ["Blue Origin", "Virgin Galactic", "Boeing", "SpaceX"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the organ system that protects the body from disease?",
+    "options": [
+      "Endocrine system",
+      "Nervous system",
+      "Immune system",
+      "Skeletal system"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What does a 'parsec' measure?",
+    "options": ["Time", "Speed", "Distance", "Mass"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name for the group of organisms that includes mosses and liverworts?",
+    "options": ["Ferns", "Gymnosperms", "Angiosperms", "Bryophytes"],
+    "answer": 3
+  },
+  {
+    "question": "Which planet is known as the 'Morning Star' or 'Evening Star'?",
+    "options": ["Mercury", "Venus", "Mars", "Jupiter"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the fatty substance that insulates nerve fibers?",
+    "options": ["Keratin", "Myelin", "Actin", "Collagen"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the telescope array in Chile that studies radio waves from space?",
+    "options": ["VLA", "Arecibo", "ALMA", "FAST"],
+    "answer": 2
+  },
+  {
+    "question": "What is the process where an organism develops from a fertilized egg?",
+    "options": ["Metabolism", "Embryogenesis", "Photosynthesis", "Homeostasis"],
+    "answer": 1
+  },
+  {
+    "question": "What is the Carrington Event of 1859 known for?",
+    "options": [
+      "A large meteor impact",
+      "The discovery of a new planet",
+      "A powerful geomagnetic storm",
+      "A total solar eclipse"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the term for an organism that lives on or in another organism and benefits at its expense?",
+    "options": ["Predator", "Parasite", "Symbiont", "Host"],
+    "answer": 1
+  },
+  {
+    "question": "What is the process by which a star is born from a nebula?",
+    "options": [
+      "Stellar ignition",
+      "Accretion",
+      "Supernova",
+      "Gravitational collapse"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the jelly-like substance that fills a cell?",
+    "options": ["Nucleoplasm", "Cytoplasm", "Protoplasm", "Ectoplasm"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the effect that causes the frequency of a wave to change for an observer moving relative to its source?",
+    "options": [
+      "Photoelectric effect",
+      "Compton effect",
+      "Doppler effect",
+      "Casimir effect"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which animal has blue blood?",
+    "options": ["Octopus", "Spider", "Horseshoe crab", "Snail"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the giant impact hypothesis?",
+    "options": [
+      "The theory of how the dinosaurs died",
+      "The theory of how the Moon was formed",
+      "The theory of planetary formation",
+      "The theory of galaxy collisions"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the scientific term for a 'high-altitude' plant?",
+    "options": ["Halophyte", "Xerophyte", "Alpine plant", "Hydrophyte"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name for the point in the sky directly above an observer?",
+    "options": ["Nadir", "Zenith", "Horizon", "Apex"],
+    "answer": 1
+  },
+  {
+    "question": "What is the function of the spleen in the human body?",
+    "options": [
+      "Produces insulin",
+      "Filters blood and supports the immune system",
+      "Digests food",
+      "Stores bile"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the 'Pioneer anomaly'?",
+    "options": [
+      "A strange radio signal",
+      "An unexpected deviation in the trajectories of the Pioneer 10 and 11 spacecraft",
+      "The discovery of an alien probe",
+      "A software glitch"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the study of fish called?",
+    "options": ["Herpetology", "Ichthyology", "Ornithology", "Entomology"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name for the 'surface' of the Sun that we see?",
+    "options": ["Chromosphere", "Corona", "Photosphere", "Core"],
+    "answer": 2
+  },
+  {
+    "question": "What is the term for a single-celled organism without a nucleus?",
+    "options": ["Eukaryote", "Prokaryote", "Virus", "Fungus"],
+    "answer": 1
+  },
+  {
+    "question": "What is the 'Wow!' signal?",
+    "options": [
+      "A confirmed alien message",
+      "A strong, narrowband radio signal detected in 1977",
+      "A recurring signal from a pulsar",
+      "A programming error"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the purpose of the stamen in a flower?",
+    "options": [
+      "To attract pollinators",
+      "To produce female gametes",
+      "To produce male gametes (pollen)",
+      "To protect the bud"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the largest canyon in the Solar System, found on Mars?",
+    "options": [
+      "Grand Canyon",
+      "Valles Marineris",
+      "Fish River Canyon",
+      "Kali Gandaki Gorge"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which part of the cell is responsible for packaging proteins?",
+    "options": [
+      "Ribosome",
+      "Endoplasmic Reticulum",
+      "Golgi apparatus",
+      "Lysosome"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the term for a small, rocky body orbiting the Sun?",
+    "options": ["Comet", "Meteor", "Asteroid", "Planetoid"],
+    "answer": 2
+  },
+  {
+    "question": "What is the main function of the small intestine?",
+    "options": [
+      "Water absorption",
+      "Nutrient absorption",
+      "Waste storage",
+      "Bile production"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is a 'rogue planet'?",
+    "options": [
+      "A planet with a very eccentric orbit",
+      "A planet that does not orbit a star",
+      "A planet that orbits its star backwards",
+      "A planet in the process of being destroyed"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which of these is NOT a type of tissue in the human body?",
+    "options": ["Epithelial", "Connective", "Muscular", "Cellular"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the first asteroid ever discovered?",
+    "options": ["Vesta", "Juno", "Pallas", "Ceres"],
+    "answer": 3
+  },
+  {
+    "question": "What is the primary function of DNA?",
+    "options": [
+      "To produce energy",
+      "To store genetic information",
+      "To act as an enzyme",
+      "To build cell walls"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name for the two points in a year when the day and night are of equal length?",
+    "options": ["Solstice", "Equinox", "Aphelion", "Perihelion"],
+    "answer": 1
+  },
+  {
+    "question": "What is the largest bone in the human body?",
+    "options": ["Femur", "Tibia", "Humerus", "Pelvis"],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the rover that landed on Mars in 2012?",
+    "options": ["Spirit", "Opportunity", "Curiosity", "Sojourner"],
+    "answer": 2
+  },
+  {
+    "question": "What is the process of a species becoming fitted to its environment?",
+    "options": ["Mutation", "Adaptation", "Evolution", "Selection"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the dark patches on the sun's surface?",
+    "options": ["Solar flares", "Prominences", "Sunspots", "Granules"],
+    "answer": 2
+  },
+  {
+    "question": "Which of these is an example of a gymnosperm?",
+    "options": ["Rose", "Oak tree", "Pine tree", "Grass"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the probe that famously flew by Pluto in 2015?",
+    "options": ["Voyager 2", "Cassini", "New Horizons", "Juno"],
+    "answer": 2
+  },
+  {
+    "question": "What is the function of the iris in the eye?",
+    "options": [
+      "Focus light",
+      "Detect color",
+      "Control the size of the pupil",
+      "Send signals to the brain"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the term for the 'wobble' of Earth's axis?",
+    "options": ["Rotation", "Revolution", "Precession", "Nutation"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the cells that detect light in the retina?",
+    "options": ["Neurons", "Glial cells", "Photoreceptors", "Epithelial cells"],
+    "answer": 2
+  },
+  {
+    "question": "What is a 'white dwarf'?",
+    "options": [
+      "A young, hot star",
+      "A small, dense remnant of a star",
+      "A type of nebula",
+      "A gas giant planet"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the process by which an animal sheds its outer layer?",
+    "options": ["Moulting", "Hibernation", "Metamorphosis", "Gestation"],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the current geological eon?",
+    "options": ["Proterozoic", "Archean", "Hadean", "Phanerozoic"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the bone in the lower leg, also known as the shin bone?",
+    "options": ["Femur", "Fibula", "Tibia", "Patella"],
+    "answer": 2
+  },
+  {
+    "question": "What is the term for an object from outer space that has struck the Earth's surface?",
+    "options": ["Meteoroid", "Meteor", "Meteorite", "Asteroid"],
+    "answer": 2
+  },
+  {
+    "question": "What is the 'Cambrian explosion'?",
+    "options": [
+      "A volcanic eruption",
+      "A rapid diversification of life forms",
+      "A meteor impact",
+      "The formation of the Earth"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the galaxy cluster that the Milky Way is a part of?",
+    "options": [
+      "Virgo Cluster",
+      "Coma Cluster",
+      "Local Group",
+      "Hercules Cluster"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the main role of the liver?",
+    "options": [
+      "Pumping blood",
+      "Filtering toxins and producing bile",
+      "Digesting carbohydrates",
+      "Producing insulin"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the scientific study of the universe called?",
+    "options": ["Astrology", "Cosmology", "Geology", "Astronomy"],
+    "answer": 1
+  },
+  {
+    "question": "Which of these is a flightless bird?",
+    "options": ["Eagle", "Penguin", "Sparrow", "Albatross"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the largest moon of Neptune?",
+    "options": ["Titan", "Triton", "Europa", "Ganymede"],
+    "answer": 1
+  },
+  {
+    "question": "What is the term for a dormant state that some animals enter during winter?",
+    "options": ["Aestivation", "Hibernation", "Migration", "Torpor"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the force that opposes motion?",
+    "options": ["Gravity", "Friction", "Inertia", "Momentum"],
+    "answer": 1
+  },
+  {
+    "question": "What is the function of the thalamus in the brain?",
+    "options": [
+      "Regulating sleep",
+      "Relaying sensory information",
+      "Controlling balance",
+      "Storing memories"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first American to orbit the Earth?",
+    "options": ["Alan Shepard", "John Glenn", "Neil Armstrong", "Gus Grissom"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the chemical process that provides energy for most life on Earth?",
+    "options": [
+      "Photosynthesis",
+      "Chemosynthesis",
+      "Respiration",
+      "Fermentation"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is a 'galaxy cluster'?",
+    "options": [
+      "A group of stars",
+      "A group of galaxies bound by gravity",
+      "A cloud of cosmic gas",
+      "A supermassive black hole"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the part of the ear that vibrates in response to sound waves?",
+    "options": ["Cochlea", "Eardrum", "Anvil", "Stirrup"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the hypothesis that suggests life on Earth may have originated from microorganisms from outer space?",
+    "options": [
+      "Abiogenesis",
+      "Panspermia",
+      "Creationism",
+      "Spontaneous Generation"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the waxy layer on a leaf that prevents water loss?",
+    "options": ["Stoma", "Epidermis", "Cuticle", "Phloem"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the brightest gamma-ray bursts observed in space?",
+    "options": ["Supernovae", "Hypernovae", "Quasars", "Blazars"],
+    "answer": 1
+  },
+  {
+    "question": "Which organ system is responsible for producing hormones?",
+    "options": [
+      "Nervous system",
+      "Endocrine system",
+      "Circulatory system",
+      "Digestive system"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the 'Great Filter' in the context of the Fermi paradox?",
+    "options": [
+      "A barrier to interstellar travel",
+      "A hypothetical barrier preventing life from becoming a space-faring civilization",
+      "A shield protecting Earth from radiation",
+      "A law of physics"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which group of animals are amphibians?",
+    "options": [
+      "Lizards and snakes",
+      "Frogs and salamanders",
+      "Turtles and tortoises",
+      "Birds and crocodiles"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the 'geocentric model' of the universe?",
+    "options": [
+      "The Sun is at the center",
+      "The Earth is at the center",
+      "The galaxy is at the center",
+      "There is no center"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the protein that carries oxygen in red blood cells?",
+    "options": ["Myoglobin", "Hemoglobin", "Albumin", "Fibrinogen"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name for the study of the Earth's magnetic field?",
+    "options": ["Geology", "Geophysics", "Paleomagnetism", "Seismology"],
+    "answer": 2
+  },
+  {
+    "question": "What is the term for the biological process of aging?",
+    "options": ["Maturation", "Senescence", "Development", "Growth"],
+    "answer": 1
+  },
+  {
+    "question": "What is the term for the time it takes for a planet to complete one orbit around the Sun?",
+    "options": ["Rotation period", "Orbital period", "Day", "Year"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the 'fight or flight' hormone?",
+    "options": ["Insulin", "Testosterone", "Estrogen", "Adrenaline"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the theory that continents have moved over geological time?",
+    "options": [
+      "Plate Tectonics",
+      "Continental Drift",
+      "Seafloor Spreading",
+      "Subduction"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the phloem in a plant responsible for?",
+    "options": [
+      "Transporting water",
+      "Transporting sugars",
+      "Structural support",
+      "Photosynthesis"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the mission that landed the first robotic rovers on Mars in 1997?",
+    "options": [
+      "Viking",
+      "Mars Pathfinder",
+      "Spirit and Opportunity",
+      "Curiosity"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the junction between two nerve cells?",
+    "options": ["Axon", "Dendrite", "Synapse", "Myelin"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name for the apparent backward motion of a planet in the sky?",
+    "options": [
+      "Prograde motion",
+      "Retrograde motion",
+      "Precession",
+      "Occultation"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which animal group does the platypus belong to?",
+    "options": ["Marsupial", "Monotreme", "Placental", "Reptile"],
+    "answer": 1
+  },
+  {
+    "question": "What is the 'light echo' phenomenon?",
+    "options": [
+      "The reflection of light off a planet",
+      "The reflection of light off surfaces in space, arriving later",
+      "The bending of light by gravity",
+      "The sound of light"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the primary role of the mitochondria?",
+    "options": [
+      "Protein synthesis",
+      "Energy production (ATP synthesis)",
+      "Waste breakdown",
+      "DNA storage"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the term for a day on the Moon?",
+    "options": ["Sol", "Lunar day", "Sidereal day", "Synodic day"],
+    "answer": 1
+  },
+  {
+    "question": "Which of these is a producer in a food chain?",
+    "options": ["Lion", "Grass", "Rabbit", "Mushroom"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first Canadian in space?",
+    "options": [
+      "Chris Hadfield",
+      "Marc Garneau",
+      "Roberta Bondar",
+      "Julie Payette"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the muscles between the ribs?",
+    "options": ["Diaphragm", "Pectorals", "Intercostal muscles", "Obliques"],
+    "answer": 2
+  },
+  {
+    "question": "What is the term for the distance from the Earth to the Sun?",
+    "options": ["Light-year", "Parsec", "Astronomical Unit (AU)", "Kilometer"],
+    "answer": 2
+  },
+  {
+    "question": "What is the scientific name for the process of taste?",
+    "options": ["Olfaction", "Gustation", "Audition", "Tactition"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the second-largest planet in our solar system?",
+    "options": ["Jupiter", "Uranus", "Neptune", "Saturn"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the system that includes the skin, hair, and nails?",
+    "options": [
+      "Skeletal system",
+      "Integumentary system",
+      "Muscular system",
+      "Endocrine system"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the term for the tidal effect that has synchronized the Moon's rotation with its orbit around Earth?",
+    "options": [
+      "Tidal locking",
+      "Orbital resonance",
+      "Gravitational braking",
+      "Precession"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which of these is a characteristic of all living things?",
+    "options": [
+      "Ability to move",
+      "Made of cells",
+      "Breathes oxygen",
+      "Has a heart"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first spacecraft to orbit another planet?",
+    "options": ["Mariner 9", "Venera 7", "Viking 1", "Pioneer Venus"],
+    "answer": 0
+  },
+  {
+    "question": "What is the role of the epiglottis?",
+    "options": [
+      "To produce sound",
+      "To prevent food from entering the trachea",
+      "To warm inhaled air",
+      "To detect smells"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the 'Drake Equation' used to estimate?",
+    "options": [
+      "The age of the universe",
+      "The number of stars in the galaxy",
+      "The number of active, communicative extraterrestrial civilizations",
+      "The probability of a meteor impact"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the main difference between an artery and a vein?",
+    "options": [
+      "The color of the blood",
+      "The direction of blood flow relative to the heart",
+      "The size of the vessel",
+      "The thickness of the vessel wall"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is a 'redshift' an indication of?",
+    "options": [
+      "An object moving closer",
+      "An object moving away",
+      "An object spinning rapidly",
+      "An object cooling down"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the largest part of the human brain?",
+    "options": ["Cerebellum", "Brainstem", "Cerebrum", "Limbic System"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the mission that detected gravitational waves for the first time?",
+    "options": ["Hubble", "Kepler", "LIGO", "Chandra"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name for a tree that sheds its leaves annually?",
+    "options": ["Evergreen", "Coniferous", "Deciduous", "Succulent"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the model that describes the structure of the atom?",
+    "options": [
+      "Dalton's model",
+      "Thomson's model",
+      "Rutherford's model",
+      "Bohr's model"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is the scientific name for the kneecap?",
+    "options": ["Tibia", "Femur", "Patella", "Fibula"],
+    "answer": 2
+  },
+  {
+    "question": "What is the 'heliosphere'?",
+    "options": [
+      "The Sun's atmosphere",
+      "The region of space dominated by the Sun's magnetic field and solar wind",
+      "The habitable zone around the Sun",
+      "The outermost layer of the Sun"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the organ that connects the fetus to the uterine wall?",
+    "options": ["Amnion", "Placenta", "Umbilical cord", "Cervix"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first interstellar probe launched by humanity?",
+    "options": ["Pioneer 10", "Voyager 2", "Voyager 1", "New Horizons"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name for the openings in the abdomen of an insect used for breathing?",
+    "options": ["Gills", "Lungs", "Spiracles", "Trachea"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the largest moon of Saturn?",
+    "options": ["Enceladus", "Titan", "Rhea", "Iapetus"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name for the 'biological clock' that regulates sleep-wake cycles?",
+    "options": [
+      "Circadian rhythm",
+      "Homeostasis",
+      "Metabolism",
+      "Menstrual cycle"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the name for the final stage in the life of a massive star?",
+    "options": ["White dwarf", "Neutron star", "Black hole", "Supernova"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name for the part of the plant that grows towards light?",
+    "options": ["Geotropism", "Phototropism", "Hydrotropism", "Thigmotropism"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the current human spaceflight program of NASA?",
+    "options": ["Apollo", "Space Shuttle", "Constellation", "Artemis"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the process where RNA is synthesized from a DNA template?",
+    "options": [
+      "Translation",
+      "Transcription",
+      "Replication",
+      "Transformation"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the 'terminator' line on the Moon?",
+    "options": [
+      "The equator",
+      "The line between day and night",
+      "The prime meridian",
+      "The edge of the visible disk"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the cells in the pancreas that produce insulin?",
+    "options": ["Alpha cells", "Beta cells", "Delta cells", "Gametes"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the V-shaped formation of stars in the constellation Taurus?",
+    "options": ["The Pleiades", "The Hyades", "Orion's Belt", "The Big Dipper"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the part of the brain responsible for long-term memory?",
+    "options": ["Amygdala", "Hippocampus", "Hypothalamus", "Thalamus"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the brightest quasar in the sky?",
+    "options": ["3C 273", "Ton 618", "Cygnus A", "M87"],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the enzyme that digests proteins in the stomach?",
+    "options": ["Amylase", "Lipase", "Pepsin", "Trypsin"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the first woman to walk in space?",
+    "options": [
+      "Valentina Tereshkova",
+      "Svetlana Savitskaya",
+      "Sally Ride",
+      "Kathryn Sullivan"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the membrane that encloses the heart?",
+    "options": ["Pleura", "Peritoneum", "Pericardium", "Meninges"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the point in a satellite's orbit that is farthest from Earth?",
+    "options": ["Perigee", "Apogee", "Perihelion", "Aphelion"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the condition where the immune system attacks the body's own tissues?",
+    "options": [
+      "Allergy",
+      "Immunodeficiency",
+      "Autoimmune disease",
+      "Infection"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the mission that landed on Titan in 2005?",
+    "options": ["Galileo", "Juno", "Huygens", "Rosetta"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the small bones in the middle ear?",
+    "options": ["Carpals", "Tarsals", "Ossicles", "Phalanges"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the effect where massive objects warp spacetime?",
+    "options": [
+      "General Relativity",
+      "Special Relativity",
+      "Quantum Mechanics",
+      "Newtonian Gravity"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the vascular tissue that transports food in plants?",
+    "options": ["Xylem", "Phloem", "Cambium", "Cortex"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first reusable spacecraft?",
+    "options": ["Apollo", "Soyuz", "Space Shuttle", "Dragon"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the region of the brain that controls body temperature and hunger?",
+    "options": ["Hypothalamus", "Thalamus", "Cerebellum", "Pons"],
+    "answer": 0
+  },
+  {
+    "question": "What is the 'axis of evil' in cosmology?",
+    "options": [
+      "A theoretical flaw in the Big Bang model",
+      "An unexpected alignment in the cosmic microwave background",
+      "A chain of supermassive black holes",
+      "A misunderstood observation"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name for an animal that is active at dawn and dusk?",
+    "options": ["Nocturnal", "Diurnal", "Crepuscular", "Matutinal"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the first successful Mars lander?",
+    "options": ["Viking 1", "Mariner 4", "Mars 3", "Sojourner"],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the genetic disorder characterized by an extra copy of chromosome 21?",
+    "options": [
+      "Turner syndrome",
+      "Klinefelter syndrome",
+      "Down syndrome",
+      "Cystic fibrosis"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the imaginary line around which the Earth spins?",
+    "options": ["Equator", "Prime Meridian", "Axis", "Ecliptic"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name for the movement of water across a semipermeable membrane?",
+    "options": [
+      "Diffusion",
+      "Osmosis",
+      "Active transport",
+      "Facilitated diffusion"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first satellite launched by the United States?",
+    "options": ["Sputnik 1", "Explorer 1", "Vanguard 1", "Pioneer 1"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the protein that makes up muscles?",
+    "options": [
+      "Keratin and Collagen",
+      "Actin and Myosin",
+      "Hemoglobin and Albumin",
+      "Insulin and Glucagon"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the phenomenon where the Moon appears larger when it is near the horizon?",
+    "options": [
+      "Atmospheric lensing",
+      "The Moon illusion",
+      "Refraction",
+      "Magnification"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name for the symbiotic relationship between fungi and algae?",
+    "options": ["Mycorrhiza", "Lichen", "Coral", "Biofilm"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the layer of the Earth's atmosphere that contains the ozone layer?",
+    "options": ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the part of a neuron that transmits signals away from the cell body?",
+    "options": ["Dendrite", "Soma", "Axon", "Synapse"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the first human to travel into space?",
+    "options": ["Neil Armstrong", "Alan Shepard", "Yuri Gagarin", "John Glenn"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the bone that makes up the upper arm?",
+    "options": ["Radius", "Ulna", "Humerus", "Clavicle"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the most common chemical element in the universe?",
+    "options": ["Helium", "Oxygen", "Carbon", "Hydrogen"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the process that converts light energy into chemical energy in plants?",
+    "options": [
+      "Respiration",
+      "Transpiration",
+      "Photosynthesis",
+      "Germination"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the term for the classification of organisms into a hierarchical system?",
+    "options": ["Taxonomy", "Genetics", "Ecology", "Anatomy"],
+    "answer": 0
+  },
+  {
+    "question": "Which planet is known for its extreme temperatures and toxic atmosphere?",
+    "options": ["Mars", "Venus", "Mercury", "Jupiter"],
+    "answer": 1
+  },
+  {
+    "question": "What is the primary function of the body's endocrine system?",
+    "options": [
+      "Movement",
+      "Communication via hormones",
+      "Protection",
+      "Digestion"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the term for a star system with two stars orbiting each other?",
+    "options": ["Double star", "Binary star", "Star cluster", "Constellation"],
+    "answer": 1
+  },
+  {
+    "question": "Which part of a plant is responsible for reproduction?",
+    "options": ["Root", "Stem", "Leaf", "Flower"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the current epoch in Earth's history, proposed to reflect human impact?",
+    "options": ["Holocene", "Pleistocene", "Anthropocene", "Pliocene"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the smallest unit of life?",
+    "options": ["Atom", "Molecule", "Organelle", "Cell"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the space probe that visited Uranus and Neptune?",
+    "options": ["Pioneer 11", "Voyager 2", "Cassini", "Galileo"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name for the study of reptiles and amphibians?",
+    "options": ["Ichthyology", "Ornithology", "Herpetology", "Mammalogy"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the dark, flat plains on the Moon, formed by ancient volcanic eruptions?",
+    "options": ["Craters", "Highlands", "Rilles", "Maria"],
+    "answer": 3
+  },
+  {
+    "question": "What is the primary job of the ribosomes?",
+    "options": [
+      "Making proteins",
+      "Storing energy",
+      "Breaking down waste",
+      "Containing DNA"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the term for a group of stars forming a recognizable pattern in the sky?",
+    "options": ["Galaxy", "Nebula", "Constellation", "Star cluster"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the largest muscle in the human body?",
+    "options": ["Biceps", "Quadriceps", "Gluteus maximus", "Latissimus dorsi"],
+    "answer": 2
+  },
+  {
+    "question": "Which gas makes up most of the volume of Jupiter and Saturn?",
+    "options": ["Methane", "Ammonia", "Hydrogen", "Helium"],
+    "answer": 2
+  },
+  {
+    "question": "What is the process of an insect's life cycle (e.g., egg, larva, pupa, adult) called?",
+    "options": ["Gestation", "Metamorphosis", "Moulting", "Photosynthesis"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the point in an orbit where an object is closest to the body it is orbiting?",
+    "options": ["Apoapsis", "Periapsis", "Apogee", "Aphelion"],
+    "answer": 1
+  },
+  {
+    "question": "Which type of cell lacks a nucleus?",
+    "options": [
+      "Eukaryotic cell",
+      "Plant cell",
+      "Animal cell",
+      "Prokaryotic cell"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is the 'cosmological principle'?",
+    "options": [
+      "The universe had a beginning",
+      "The laws of physics are the same everywhere",
+      "The universe is expanding",
+      "The universe is homogeneous and isotropic on large scales"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the photoreceptor cells in the retina responsible for vision in low light?",
+    "options": ["Cones", "Rods", "Bipolar cells", "Ganglion cells"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first Asian country to reach Mars orbit?",
+    "options": ["China", "Japan", "India", "South Korea"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the process by which living organisms are named and classified?",
+    "options": ["Genetics", "Taxonomy", "Phylogeny", "Cladistics"],
+    "answer": 1
+  },
+  {
+    "question": "What is the term for the streak of light produced when a meteoroid enters Earth's atmosphere?",
+    "options": ["Comet", "Asteroid", "Meteor", "Meteorite"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the long bone in the forearm that is on the thumb side?",
+    "options": ["Humerus", "Ulna", "Tibia", "Radius"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the first telescope in space?",
+    "options": [
+      "Hubble Space Telescope",
+      "Spitzer Space Telescope",
+      "Orbiting Astronomical Observatory 2",
+      "Chandra X-ray Observatory"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the process where a protein's structure is altered by heat or pH changes?",
+    "options": ["Hydrolysis", "Denaturation", "Synthesis", "Polymerization"],
+    "answer": 1
+  },
+  {
+    "question": "Which planet has the shortest year?",
+    "options": ["Mercury", "Venus", "Earth", "Mars"],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the valve that controls blood flow from the right atrium to the right ventricle?",
+    "options": [
+      "Mitral valve",
+      "Aortic valve",
+      "Pulmonary valve",
+      "Tricuspid valve"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the theoretical wormhole solution to Einstein's field equations?",
+    "options": [
+      "Schwarzschild wormhole",
+      "Kerr wormhole",
+      "Einstein-Rosen bridge",
+      "Morris-Thorne wormhole"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name for the study of algae?",
+    "options": ["Mycology", "Phycology", "Bryology", "Lichenology"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first spacecraft to achieve a soft landing on the Moon?",
+    "options": ["Apollo 11", "Surveyor 1", "Luna 9", "Ranger 7"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the small, finger-like projections in the small intestine that increase surface area?",
+    "options": ["Cilia", "Flagella", "Villi", "Alveoli"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the boundary that marks the edge of the Sun's influence?",
+    "options": ["Kuiper Belt", "Oort Cloud", "Heliopause", "Asteroid Belt"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the protein that forms blood clots?",
+    "options": ["Albumin", "Hemoglobin", "Fibrin", "Collagen"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the process that created the heavy elements in the universe?",
+    "options": [
+      "Big Bang nucleosynthesis",
+      "Stellar nucleosynthesis",
+      "Photosynthesis",
+      "Radioactive decay"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which part of the nervous system controls involuntary actions like breathing?",
+    "options": [
+      "Somatic nervous system",
+      "Autonomic nervous system",
+      "Central nervous system",
+      "Peripheral nervous system"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the largest known galaxy?",
+    "options": ["Milky Way", "Andromeda", "IC 1101", "Triangulum"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the type of symbiosis where one organism benefits and the other is unaffected?",
+    "options": ["Mutualism", "Parasitism", "Commensalism", "Competition"],
+    "answer": 2
+  },
+  {
+    "question": "What is the term for the day with the longest period of daylight?",
+    "options": [
+      "Winter Solstice",
+      "Summer Solstice",
+      "Vernal Equinox",
+      "Autumnal Equinox"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the fluid that cushions the brain and spinal cord?",
+    "options": ["Plasma", "Synovial fluid", "Cerebrospinal fluid", "Lymph"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the first extrasolar planet discovered orbiting a Sun-like star?",
+    "options": [
+      "51 Pegasi b",
+      "Kepler-186f",
+      "Proxima Centauri b",
+      "TRAPPIST-1e"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the organ that stores urine?",
+    "options": ["Kidney", "Ureter", "Bladder", "Urethra"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the large, dark basaltic plains on Earth's Moon?",
+    "options": ["Maria", "Highlands", "Craters", "Rilles"],
+    "answer": 0
+  },
+  {
+    "question": "What is the name for the 'voice box' in humans?",
+    "options": ["Pharynx", "Larynx", "Trachea", "Esophagus"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the effect that causes hurricanes to spin in different directions in different hemispheres?",
+    "options": [
+      "Doppler Effect",
+      "Coriolis Effect",
+      "Greenhouse Effect",
+      "Albedo Effect"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the largest phylum in the animal kingdom?",
+    "options": ["Mollusca", "Chordata", "Arthropoda", "Annelida"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the process that describes the life cycle of a star?",
+    "options": [
+      "Stellar evolution",
+      "Star formation",
+      "Nucleosynthesis",
+      "Galactic dynamics"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the specialized cells that transmit nerve impulses?",
+    "options": ["Glial cells", "Neurons", "Epithelial cells", "Myocytes"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first probe to orbit Jupiter?",
+    "options": ["Voyager 1", "Pioneer 10", "Galileo", "Juno"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the acid found in the stomach?",
+    "options": [
+      "Acetic acid",
+      "Sulfuric acid",
+      "Hydrochloric acid",
+      "Citric acid"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name for the scientific law describing the relationship between a planet's orbital period and its distance from the sun?",
+    "options": [
+      "Newton's Law of Gravitation",
+      "Einstein's Theory of Relativity",
+      "Kepler's Third Law",
+      "Hubble's Law"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the process where a liquid turns into a solid?",
+    "options": ["Melting", "Boiling", "Freezing", "Condensation"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the space agency of Russia?",
+    "options": ["ESA", "JAXA", "Roscosmos", "CNSA"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the part of the flower that attracts pollinators with its color and scent?",
+    "options": ["Sepal", "Petal", "Stamen", "Pistil"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name for the event horizon of a black hole?",
+    "options": [
+      "The singularity",
+      "The point of no return",
+      "The accretion disk",
+      "The photon sphere"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the process that organisms use to get energy from food?",
+    "options": ["Photosynthesis", "Respiration", "Digestion", "Excretion"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first Chinese astronaut in space?",
+    "options": ["Jing Haipeng", "Liu Boming", "Yang Liwei", "Zhai Zhigang"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the largest component of blood?",
+    "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the phenomenon where gravity causes light to bend?",
+    "options": [
+      "Gravitational lensing",
+      "Redshift",
+      "Refraction",
+      "Diffraction"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the kingdom of life that includes bacteria?",
+    "options": ["Protista", "Fungi", "Monera", "Plantae"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the second man to walk on the Moon?",
+    "options": [
+      "Neil Armstrong",
+      "Michael Collins",
+      "Buzz Aldrin",
+      "Pete Conrad"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name for the 'growth rings' found in trees?",
+    "options": ["Bark layers", "Phloem rings", "Annual rings", "Xylem rings"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the large cluster of galaxies of which our Local Group is a part?",
+    "options": [
+      "Coma Cluster",
+      "Virgo Supercluster",
+      "Hercules Cluster",
+      "Shapley Supercluster"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the part of the cell that acts as a 'garbage disposal'?",
+    "options": ["Mitochondrion", "Ribosome", "Lysosome", "Vacuole"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the current rover exploring Jezero Crater on Mars?",
+    "options": ["Curiosity", "Perseverance", "Spirit", "Opportunity"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the layer of skin that you can see?",
+    "options": ["Dermis", "Hypodermis", "Epidermis", "Subcutaneous layer"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the two-lobed structure at the top of the brainstem that acts as a sensory relay station?",
+    "options": ["Hypothalamus", "Thalamus", "Pituitary gland", "Pineal gland"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the process by which a cell divides to produce gametes?",
+    "options": ["Mitosis", "Meiosis", "Binary fission", "Budding"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the star that will be the North Star in about 12,000 years?",
+    "options": ["Sirius", "Vega", "Polaris", "Thuban"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name for the tough, flexible tissue that is found at the ends of bones?",
+    "options": ["Tendon", "Ligament", "Cartilage", "Muscle"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the first object to be confirmed as an interstellar visitor to our solar system?",
+    "options": ["'Oumuamua", "Borisov", "Chiron", "Hidalgo"],
+    "answer": 0
+  },
+  {
+    "question": "What is the name for the offspring produced by breeding two different species?",
+    "options": ["Mutant", "Hybrid", "Clone", "Variant"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the space observatory that specializes in infrared light?",
+    "options": [
+      "Hubble Space Telescope",
+      "Chandra X-ray Observatory",
+      "Spitzer Space Telescope",
+      "Compton Gamma Ray Observatory"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the part of the plant that contains the seeds?",
+    "options": ["Flower", "Leaf", "Stem", "Fruit"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the phenomenon where an object's velocity is so high it can escape the gravitational pull of a planet?",
+    "options": [
+      "Orbital velocity",
+      "Terminal velocity",
+      "Escape velocity",
+      "Sub-orbital velocity"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the largest ocean animal?",
+    "options": ["Giant Squid", "Blue Whale", "Whale Shark", "Sperm Whale"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the event that is thought to have caused the extinction of the dinosaurs?",
+    "options": [
+      "Cretaceous-Paleogene extinction event",
+      "Permian-Triassic extinction event",
+      "Ice Age",
+      "Volcanic winter"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the process by which a solid changes directly into a gas?",
+    "options": ["Evaporation", "Condensation", "Sublimation", "Deposition"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the first African American in space?",
+    "options": [
+      "Mae Jemison",
+      "Guion Bluford",
+      "Ronald McNair",
+      "Frederick Gregory"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the structure that connects a muscle to a bone?",
+    "options": ["Ligament", "Tendon", "Cartilage", "Fascia"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the scale used to classify the energy of earthquakes, which has replaced the Richter scale?",
+    "options": [
+      "Mercalli scale",
+      "Moment magnitude scale",
+      "Fujita scale",
+      "Saffir-Simpson scale"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the study of the relationships between organisms and their environment?",
+    "options": ["Ecology", "Genetics", "Physiology", "Botany"],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the first probe to land on a comet?",
+    "options": ["Rosetta", "Stardust", "Deep Impact", "Philae"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the tube that carries urine from the bladder out of the body?",
+    "options": ["Ureter", "Urethra", "Vas deferens", "Fallopian tube"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the phenomenon that causes the sky to appear blue?",
+    "options": [
+      "Rayleigh scattering",
+      "Mie scattering",
+      "Refraction",
+      "Diffraction"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the process that allows some bacteria to produce their own food using chemical energy?",
+    "options": [
+      "Photosynthesis",
+      "Chemosynthesis",
+      "Respiration",
+      "Fermentation"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the space mission that carried the 'Golden Record'?",
+    "options": ["Pioneer", "Voyager", "Apollo", "Mariner"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the type of RNA that carries amino acids to the ribosome?",
+    "options": [
+      "Messenger RNA (mRNA)",
+      "Transfer RNA (tRNA)",
+      "Ribosomal RNA (rRNA)",
+      "Small nuclear RNA (snRNA)"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the brightest star in the constellation Orion?",
+    "options": ["Betelgeuse", "Sirius", "Rigel", "Aldebaran"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name for the outer layer of the cerebrum?",
+    "options": ["Medulla", "Cortex", "Pons", "Thalamus"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first crewed mission to orbit the Moon?",
+    "options": ["Apollo 8", "Apollo 10", "Apollo 11", "Gemini 7"],
+    "answer": 0
+  },
+  {
+    "question": "What is the name for the basic unit of heredity passed from parent to offspring?",
+    "options": ["Chromosome", "Gene", "Allele", "Nucleotide"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first planet to be discovered using a telescope?",
+    "options": ["Neptune", "Uranus", "Pluto", "Jupiter"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the part of the cell that provides structure and support?",
+    "options": ["Cell membrane", "Cytoskeleton", "Cytoplasm", "Cell wall"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first successfully cloned mammal?",
+    "options": [
+      "Dolly the sheep",
+      "CC the cat",
+      "Snuppy the dog",
+      "Prometea the horse"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the name for the tail of a comet?",
+    "options": ["Stream", "Trail", "Wake", "Coma and Tail"],
+    "answer": 3
+  },
+  {
+    "question": "Which system in the body is responsible for breaking down food?",
+    "options": [
+      "Circulatory System",
+      "Respiratory System",
+      "Digestive System",
+      "Nervous System"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the nearest large spiral galaxy to our own?",
+    "options": [
+      "Triangulum Galaxy",
+      "Andromeda Galaxy",
+      "Pinwheel Galaxy",
+      "Sombrero Galaxy"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name for the tiny blood vessels that connect arteries and veins?",
+    "options": ["Arterioles", "Venules", "Capillaries", "Aorta"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the unit of measurement equal to the average distance from the Earth to the Sun?",
+    "options": ["Light Year", "Parsec", "Astronomical Unit", "Kilometer"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the waxy, fat-like substance found in all cells of the body?",
+    "options": ["Glucose", "Cholesterol", "Protein", "Starch"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first asteroid to be visited by a spacecraft?",
+    "options": ["Ceres", "Vesta", "Eros", "Gaspra"],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the part of the plant that conducts water from the roots to the leaves?",
+    "options": ["Phloem", "Xylem", "Cambium", "Epidermis"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the effect that makes stars appear to twinkle?",
+    "options": [
+      "Atmospheric scintillation",
+      "Diffraction",
+      "Refraction",
+      "Stellar parallax"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the name for the study of ancient life through fossils?",
+    "options": ["Archaeology", "Paleontology", "Geology", "Anthropology"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the process in which a cell captures a substance from outside the cell by engulfing it?",
+    "options": ["Exocytosis", "Endocytosis", "Osmosis", "Diffusion"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first woman to command the International Space Station?",
+    "options": [
+      "Peggy Whitson",
+      "Eileen Collins",
+      "Susan Helms",
+      "Pamela Melroy"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the part of the digestive system where most nutrients are absorbed?",
+    "options": ["Stomach", "Large Intestine", "Small Intestine", "Esophagus"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the large cloud of icy bodies believed to surround the solar system?",
+    "options": ["Kuiper Belt", "Asteroid Belt", "Oort Cloud", "Van Allen Belt"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name for a group of similar cells that perform a specific function?",
+    "options": ["Organ", "Tissue", "Organism", "System"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first planetary mission to use a gravity assist maneuver?",
+    "options": ["Mariner 10", "Pioneer 10", "Voyager 1", "Venera 4"],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the condition characterized by high blood sugar?",
+    "options": ["Hypoglycemia", "Hypertension", "Diabetes", "Anemia"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the star nearest to our solar system?",
+    "options": [
+      "Sirius",
+      "Alpha Centauri A",
+      "Proxima Centauri",
+      "Barnard's Star"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the biological catalyst that speeds up chemical reactions?",
+    "options": ["Hormone", "Enzyme", "Carbohydrate", "Lipid"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the first private mission to the Moon?",
+    "options": ["Lunar X Prize", "Beresheet", "Hakuto-R", "DearMoon project"],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the part of the brain responsible for decision-making and personality?",
+    "options": [
+      "Parietal Lobe",
+      "Temporal Lobe",
+      "Occipital Lobe",
+      "Frontal Lobe"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is the name of the point of a star's life cycle when it fuses helium into carbon?",
+    "options": [
+      "Main sequence",
+      "Red giant branch",
+      "White dwarf phase",
+      "Protostar stage"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the name of the process by which an organism's internal environment is kept stable?",
+    "options": ["Homeostasis", "Metabolism", "Respiration", "Evolution"],
+    "answer": 0
+  },
+  {
+    "question": "What is the name of the first space tourist?",
+    "options": [
+      "Mark Shuttleworth",
+      "Anousheh Ansari",
+      "Dennis Tito",
+      "Richard Garriott"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the name for the iron-containing protein in red blood cells?",
+    "options": ["Myoglobin", "Keratin", "Hemoglobin", "Collagen"],
+    "answer": 2
+  },
+  {
+    "question": "What is the name of the largest known object in the Kuiper Belt?",
+    "options": ["Pluto", "Eris", "Makemake", "Haumea"],
+    "answer": 0
+  }
+]
