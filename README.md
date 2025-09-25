@@ -13,6 +13,7 @@ Built by **Sanket Padhyal**, it combines **real-time space data using NASA APIs,
 ![Realtime](https://img.shields.io/badge/Real--Time-Yes-red)  
 ![AI Bot](https://img.shields.io/badge/AI-Bot%20Integration-blue)  
 ![Hosting](https://img.shields.io/badge/Hosting-Netlify%20%7C%20Render-purple)  
+![API](https://img.shields.io/badge/API-NASA%20%7C%20OpenRouter%20%7C%20ForecastAPI%20%7C%20ISS-green)
 
 ---
 
